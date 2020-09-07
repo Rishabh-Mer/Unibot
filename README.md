@@ -26,6 +26,7 @@ python -m spacy link en_core_web_md en
 ```
 
 ### For Node JS, Json Server
+1. Download and Install node.js setup and run following command in target folder  
 
 ```bash
 npm install json-server
