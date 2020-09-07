@@ -1,0 +1,1758 @@
+session_config:
+  session_expiration_time: 60  
+
+actions:
+- utter_ask_details_e
+- utter_ask_details_h
+- utter_ask_lang
+- utter_greet_e
+- utter_greet_h
+- utter_directions
+- utter_bus_service
+- utter_bus_service_h
+- utter_fees
+- utter_fees_h
+- utter_department
+- utter_admission_h
+- utter_admission_criteria
+- utter_goodbye
+- utter_welcome
+- utter_bad
+- utter_ask_howold
+- utter_ask_languagesbot
+- utter_telljoke
+- utter_ask_time
+- utter_ask_restaurant
+- utter_sayabout
+- utter_work
+- utter_display
+- utter_ask_whoami
+- utter_ask_builder
+- utter_ask_weather
+- utter_ask_wherefrom
+- utter_ask_whatismyname
+- utter_department_h
+- utter_examination
+- utter_merit
+- utter_intake
+- utter_scholarship
+- utter_merit_h
+- utter_intake_h
+- utter_scholarship_h
+- utter_payment
+- utter_payment_h
+- utter_food
+- utter_canteen_h
+- utter_payment_date
+- utter_bus_fees
+- utter_fees_details
+- utter_bus_fees_h
+- utter_direction_h
+- utter_minority_h
+- utter_reserved_h
+- utter_dte_h
+# - utter_slots_values
+- utter_no_problem_e
+- utter_no_problem_h
+- utter_busid_h
+- utter_college_id_h
+- utter_library_card_h
+- utter_locker_facility_h
+- utter_attendance_h
+- utter_wifi_facility_h
+- utter_TPO_h
+- utter_placement_detail_h
+- utter_academic_calendar_h
+- utter_facility_h
+- utter_placement_h
+- utter_college_reopen
+- utter_last_date_admission
+- utter_college_timing
+- utter_minority
+- utter_reservation
+- utter_attendance_criteria
+- utter_document_h
+- utter_docs_h
+- utter_cutoff_h
+- utter_locker_facility
+- utter_non_veg
+- utter_hostel
+- utter_cutoff
+- utter_dte_code
+- utter_ucoe
+- utter_academic_calendar
+- utter_aurora
+- utter_vyro
+- utter_IETE
+- utter_hackstomp_date
+- utter_hackstomp
+- utter_events
+- utter_anti_ragging
+- utter_applying_id
+- utter_library_card
+- utter_wifi_facility
+- utter_placement 
+- utter_applying_id_h
+- utter_faculty_name
+- utter_principal
+- utter_principal_h
+- utter_back
+- utter_back_2
+- utter_wrong_name
+- utter_brochure
+- utter_brochure_h
+- utter_college_h
+- utter_events_h
+- utter_college_timing_h
+- utter_admission_criteria_h
+- utter_admission_schedule_h
+- utter_admission_schedule
+- utter_display_h
+- utter_admission_documents
+- utter_back_3
+- utter_thanks
+- utter_facility
+- utter_IETE_schedule
+- utter_vyro_schedule
+- utter_aurora_schedule
+- utter_transport_way
+- utter_transport_way_h
+- utter_what_else
+- utter_library
+- utter_technical_events
+- utter_who_am_i
+- utter_init_chat
+- utter_naac
+- utter_affiliated
+- utter_unaided
+- utter_course_duration
+- utter_ict_classroom
+- utter_tantrostav
+- utter_canteen
+- utter_canteen_menu
+- utter_library_timing
+- utter_bcr_gcr
+- utter_ac_classroom
+- utter_extra_activities
+- utter_nss
+- utter_ieee
+- utter_csi
+- utter_automation
+- utter_wdcell
+- utter_farming
+- utter_speak_club
+- utter_scouncil
+- utter_eyantra
+- utter_placement_companies
+- utter_placed_students
+- utter_distance
+- utter_nearest_station
+- utter_concession
+- utter_parking
+- utter_bus_id
+- utter_show_details
+- utter_id_application_accept
+- utter_choose_change
+- utter_yes
+- utter_college_founder
+- utter_college_age
+- utter_IT
+- utter_COMPS
+- utter_CIVIL
+- utter_AIML
+- utter_DATA
+- utter_it_faculties
+- utter_comps_faculties
+- utter_civil_faculties
+- utter_aiml_faculties
+- utter_data_faculties
+- utter_it_syllabus
+- utter_comps_syllabus
+- utter_civil_syllabus
+- utter_aiml_syllabus
+- utter_data_syllabus
+- utter_it_newsletter
+- utter_library_details
+- utter_notices
+- utter_suggestions
+- utter_diploma_schedule
+- utter_diploma_documents
+- utter_diploma_criteria
+- utter_sports_room
+- utter_sports_room_h
+- utter_ask_feed
+- utter_ask_feed_h
+- utter_about_college
+- utter_about_college_h
+- utter_quote_day
+
+intents:
+- admission
+- admission_criteria
+- admission_h
+- library
+- examination
+- fees
+- payment
+- payment_date  
+- scholarship
+- intake
+- cutoff
+- merit
+- food
+- examination_h
+- fees_h
+- payment_h
+- scholarship_h
+- intake_h
+- merit_h
+- canteen_h
+- bus_fees
+- bus_fees_h
+- bus_service
+- bus_service_h
+- department
+- department_h
+- goodbye
+- greet
+- location_search_h
+- reach_college
+- thankyou
+- askabout
+- askwork
+- handleinsult
+- directions
+- directions_h
+- images
+- ask_howdoing
+- ask_builder
+- ask_wherefrom
+- telljoke
+- ask_time
+- ask_howold
+- ask_whoami
+- ask_languagesbot
+- ask_whatismyname
+- ask_weather
+- ask_restaurant
+- lang_e
+- lang_h
+- cutoff_h
+- document_h
+- docs_h
+- minority_h
+- reserved_h
+- dte_h
+- inform
+- name
+- deny
+- accept
+- affirm
+- busid_h
+- college_id_h
+- library_card_h
+- locker_facility_h
+- attendance_h
+- wifi_facility_h
+- TPO_h
+- placement_detail_h
+- academic_calendar_h
+- college_reopen
+- last_date_admission
+- college_timing 
+- minority
+- reservation
+- attendance_criteria
+- locker_facility
+- non_veg
+- hostel
+- ucoe
+- academic_calendar
+- aurora
+- vyro
+- IETE
+- hackstomp_date
+- hackstomp
+- events
+- anti_ragging
+- applying_id
+- library_card
+- wifi_facility
+- placement
+- dte_code
+- attendance
+- placement_h
+- facility_h
+- applying_id_h
+- faculty_name
+- principal
+- principal_h
+- bot_challenge
+- back
+- back2
+- admission_documents
+- brochure
+- brochure_h
+- college_h
+- images_h
+- events_h
+- admission_schedule_h
+- admission_schedule
+- admission_criteria_h
+- college_timing_h
+- back3
+- fees_h_btn
+- appraise
+- more
+- facility
+- IETE_schedule
+- vyro_schedule
+- aurora_schedule
+- greet_h
+- transport_way
+- transport_way_h
+- what_else
+- ask_library
+- technical_events
+- who_are_you
+- start
+- change_language
+- naac_grade
+- college_type
+- affiliated
+- course_duration
+- ict_classroom
+- tantrostav
+- canteen
+- menu_h
+- library_timings
+- bcr_facility
+- gcr_facility
+- ac_classroom
+- extra_activities
+- csi
+- ieee
+- nss
+- automation
+- farming
+- scouncil
+- wdcell
+- speak_club
+- eyantra
+- placement_companies
+- placed_student
+- nearest_station
+- distance
+- bus_id
+- concession
+- parking
+- apply_id
+- semester
+- stream
+- change_name
+- change_stream
+- change_sem
+- ok
+- how_old_college
+- founder
+- IT
+- COMPS
+- CIVIL
+- AIML
+- DATA
+- it_faculties
+- comps_faculties
+- civil_faculties
+- aiml_faculties
+- data_faculties
+- it_syllabus
+- comps_syllabus
+- civil_syllabus
+- aiml_syllabus
+- data_syllabus
+- it_newsletter
+- library_details
+- notices
+- suggestions
+- diploma_admissions
+- sports_room
+- sports_room_h
+- about_college
+- about_college_h
+- feed_h
+- quote_day
+
+forms:
+  - user_form
+  - feedback_form
+  - email_form
+  - id_card_form
+  
+entities:
+  - name
+  - phone
+  - email
+  - stream
+  - semester
+  - diploma_admission_schedule
+  - diploma_documents
+  - diploma_eligibility_criteria
+  - facility_type
+  - activities
+  - notice
+  - busid
+  - collegeid
+  - IT
+  - COMPS
+  - CIVIL
+  - AIML
+  - DATA
+
+  
+slots:
+  name:
+    type: unfeaturized
+    auto_fill: false
+  phone:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  otp:
+    type: unfeaturized
+    auto_fill: false
+  stream:
+    type: unfeaturized
+    auto_fill: false
+  semester:
+    type: unfeaturized
+    auto_fill: false  
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  lang:
+    type: categorical
+    values:
+      - English
+      - Hindi 
+
+responses:
+  utter_init_chat:
+    - text: "Hi! Welcome to Universal Collge of Engineering, I am <b>UniBot</b> 😊, I can help you with Admission Related queries, College, Location, Events, Facilities and many more.. <br> <b> To see the video of college - </b> <a href =' https://youtu.be/fMRARRQLARk ' target = '_blank'> click here </a>"
+      image: "https://i.imgur.com/uyahBhx.jpg"  
+      
+  utter_ask_details_e:
+    - text: "Before we start can i have your details like name, phone and email ?"
+      buttons:  
+      - title: "Yes"
+        payload: '/accept'
+      - title: "No" 
+        payload: '/deny'
+
+  utter_ask_details_h:
+    - text: "नमस्ते 🙏, इससे पहले कि मैं मदद कर पाऊ, क्या आपकी जानकारी जैसे नाम, फोन नंबर और ईमेल मिल सकते है ?"
+      buttons:  
+      - title: "हाँ"
+        payload: '/accept'
+      - title: "नहीं"
+        payload: '/deny'
+
+  utter_ask_feed:
+    - text: "It was a pleasure talking to you 😊. I would really appreciate it if you can rate the conversation."
+      buttons:
+      - title: "Yes"
+        payload: '/accept'
+      - title: "No"
+        payload: '/deny'
+
+  utter_ask_feed_h:
+    - text: "आपसे बात करके ख़ुशी हुई | क्या आप हमारी बातचीत का मूल्यांकन  कर सकते है |"
+      buttons:
+      - title: "हाँ"
+        payload: '/accept'
+      - title: "नहीं"
+        payload: '/deny'
+        
+  utter_ask_name:
+    - text: "Please Enter Your Full Name. <br> कृपया आपका नाम लिखे|"
+
+  utter_ask_phone:
+    - text: "Please enter your Phone Number 📞 <br> कृपया आपका फोन नंबर लिखे|"
+
+  utter_ask_email:
+    - text: "Please Enter Your Email 📧 <br> कृपया आपका ईमेल आईडी लिखे|"
+
+  utter_ask_feedback:
+    - text: "Please rate the above conversation from <b>0-5</b> <br> कृपया अपना मूल्यांकन <b>0-५</b> के बीच में दीजिये|"
+  
+  utter_ask_otp:
+    - text: "Please Enter OTP received in your Email <br> कृपया अपने मेल पे आया हुआ OTP यहाँ पर डालिये|"
+
+  utter_ask_stream:
+    - text: "Please Choose Your stream :"
+      buttons:
+      - title: "Information Technology"
+        payload: "Information Technology"
+      - title: "Computer Science"
+        payload: "Computer Science"
+      - title: "EXTC"
+        payload: "extc"
+      - title: "ETRX"
+        payload: "ETRX"
+      - title: "Civil"
+        payload: "civil"  
+
+  utter_ask_semester:
+    - text: "Choose your semester:"
+      buttons:
+      - title: "FE"
+        payload: "FE"
+      - title: "SE"
+        payload: "SE"
+      - title: "TE"
+        payload: "TE"
+      - title: "BE"
+        payload: "BE"
+
+  utter_submit:
+    - text: "Thank you for providing your information. <br> धन्यवाद आपकी जानकारी के लिए |"
+
+  # utter_slots_values:
+  #   - text: "These are the details provided by you:<br>
+  #            - Name: {name}<br>
+  #            - Phone No: {phone}<br>
+  #            - Email: {email} <br><br>"
+
+  utter_wrong_name:
+    - text: "Please enter valid Name, Name should not contain a Number. <br><br> कृपया करके अपने नाम की सही जानकारी दे |"
+    - text: "Please enter valid name, numbers are not allowed. <br><br> कृपया करके अपने नाम की सही जानकारी दे |"
+
+  utter_wrong_phone:
+    - text: "Sorry Your Number is Invalid please type valid number. <br><br> कृपया करके अपने फ़ोन नंबर की सही जानकारी दे |"
+    - text: "Invalid Number, Phone number should be a 10 digit number, without any prefix (+91), please try again!. <br><br> कृपया करके अपने फ़ोन नंबर की सही जानकारी दे |"
+
+  utter_wrong_email:
+    - text: "Sorry Your Email is invalid please enter correct email. <br><br> कृपया करके अपने ईमेल आईडी की सही जानकारी दे |"
+
+  utter_wrong_otp:
+    - text: "Invalid OTP, Please enter valid. <br> यह OTP गलत है कृपया सही OTP डाले |"
+
+  utter_wrong_feedback:
+    - text: "Invalid,Only give rating from <b>0-5</b>. <br><br> कृपया करके मूल्यांकन <b>0-५</b> में दे |"
+
+  utter_default:
+    - text: "sorry, I didn't understand 😅, can you please repharse your sentance."
+
+  utter_no_problem_e:
+    - text: "No Problem!"
+    - text: "Not a Problem!"
+
+  utter_no_problem_h:
+    - text: "ठीक है कोई बात नहीं"
+
+  utter_wrong_stream:
+    - text: "Choose valid Stream"
+
+  utter_wrong_sem:
+    - text: "Please choose valid Semester"
+
+  utter_show_details:
+    - text: "These are the details provided by you:<br>
+                 - Name: {name}<br>
+                 - Stream: {stream}<br>
+                 - Semester: {semester} <br> "
+
+  utter_choose_change:
+    - text: "Select the detail you want to change"
+      buttons:
+      - title: "Name"
+        payload: '/change_name'
+      - title: "Stream"
+        payload: '/change_stream'
+      - title: "Semester"
+        payload: '/change_sem'
+
+  utter_id_application_accept:
+    - text: "You can collect your id from computer lab within 7 days"
+
+  utter_ask_lang:
+    - text: "Choose Your Language"
+      buttons:  
+      - title: "English"
+        payload: '/lang_e'
+      - title: "Hindi"
+        payload: '/lang_h'
+
+  utter_greet_e: 
+    - text: "How can i help you ?"
+
+  utter_suggestions:
+    - text: "This are some suggestion you can lookup on 💡!!"
+      buttons:
+      - title: "Quote of the Day"
+        payload: '/quote_day'
+      - title: "About Us"
+        payload: '/about_college'
+      - title: "Naac"
+        payload: '/naac_grade'
+      - title: "Notices"
+        payload: '/notices'
+      - title: "Prospectus 2020-21"
+        payload: '/brochure'
+      - title: "Admission-Procedure"
+        payload: '/admission_schedule'
+      - title: "Anti-Ragging"
+        payload: '/anti_ragging'
+      
+
+  utter_greet_h:
+    - text: "नमस्ते! मेरा नाम युनिबोट है ,आपकी क्या मदद कर सकता हूँ ?"
+      buttons:  
+      - title: "प्रवेश"
+        payload: '/admission_h'
+      - title: "कॉलेज"
+        payload: '/college_h'
+      - title: "स्थान"
+        payload: '/location_search_h'
+      - title: "विभाग"
+        payload: '/department_h'
+      - title: "फीस"
+        payload: '/fees_h_btn'
+      - title: "प्लेसमेंट"
+        payload: '/placement_h'
+      - title: "सुविधाएं"
+        payload: '/facility_h'
+      - title: "ब्रोशर"
+        payload: '/brochure_h'
+      - title: "प्रतिक्रिया"
+        payload: '/feed_h'
+
+  utter_quote_day:
+    - text: " Never fear shadows. They simply mean there's a light shining somewhere nearby " 
+
+  utter_notices:
+    - text: '<b>NOTICES:</b><br><a href ="https://docdro.id/zmsbItz" target="_blank">COVID NOTICE</a><br> 
+              <a href="https://docdro.id/Y8ggVAB" target="_blank">Pre-Admission Notice</a>'
+
+  utter_directions:
+    - text: 'Near Bhajansons & Punyadham,Kaman Bhiwandi Road,Vasai, Palghar-401208.<br> Contact Number:<br> +91 800 7000 755 <br> +91 800 7478 659 <br> +91 840 7979 167 <br>To open with Google Maps <a href ="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target = "_blank">Click Here</a>'
+      buttons:
+      - title: "Bus Service"
+        payload: '/bus_service'
+    
+  utter_direction_h:
+    - text: 'यूनिवर्सल कॉलेज ऑफ़ इंजीनियरिंग ,भजनसेन्स  & पुण्यधाम के नज़दीक, कमान भिवंडी रोड, वसई, पालघर - 401208 <br> संपर्क करे: <br> +91 800 7000 755 <br> +91 800 7478 659 <br> +91 840 7979 167<br> गूगल मैप्स से देखने के लिए <a href="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target="_blank">यहाँ क्लिक करे | </a>'
+      buttons:
+      - title : "🔙"
+        payload: '/back'
+
+  utter_bus_service:
+    - text: "College offers bus service from: <br>1. Borivali East (near kasturba police station), Timing: 7.30am <br>2. Vasai West (near gurudwara), Timimg: 7.30am <br> 3. Thane East (near gaondevi mandir), Timing: 7.30am<br> 4. Golden Nest, MiraRoad, Timing: 7.30am "
+      buttons:
+      - title: "Bus-Fees"
+        payload: '/bus_fees'
+      - title: "Other Transport"
+        payload: '/transport_way'
+
+  utter_bus_service_h:
+    - text: "कॉलेज बस सर्विस :<br> 1. बोरीवली, टाइमिंग: ७.३० am <br> 2. वसई वेस्ट, टाइमिंग:७.३० am <br> 3. ठाणे ईस्ट, टाइमिंग: ७.३० am <br> 4. गोल्डन नेस्ट मीरारोड, टाइमिंग: ७.३० am | "
+      buttons:
+      - title: "बस फीस"
+        payload: '/bus_fees_h'
+      - title: "कॉलेज पूछने के तरीके"
+        payload: '/transport_way_h'
+      - title : "🔙"
+        payload: '/back'
+
+  utter_bus_fees:
+    - text: "Fees Structure for Bus Service is :<br> 1. Borivali - ₹ 20000/-<br> 2. Vasai - ₹ 18500/-<br> 3. Thane - ₹ 19000 /-<br> 4. Golden Nest - ₹ 18000 /- "
+      buttons:
+      - title: "Other Transport"
+        payload: '/transport_way'
+
+  utter_bus_fees_h:
+    - text: "बस फीस: <br> 1. बोरीवली - ₹ २००००/-<br> 2. वसई - ₹ १८५००/-<br> 3. ठाणे - ₹ १९०००/-<br> 4. गोल्डन नेस्ट - ₹ १८०००/- | "
+      
+  utter_bus_id:
+    - text: "You can apply for bus id card in Admin Office by submitting a copy of your Bus Fees Reciept"
+
+  utter_department:
+    - text: "<b>Departments available college are:</b><br> 1. INFORMATION TECHNOLOGY<br> 2. COMPUTER ENGINEERING<br> 3. CIVIL ENGINEERING<br> 4. DATA ENGINEERING<br> 5. ARITIFICIAL INTELLIGENCE AND MACHINE LEARNING<br><br> <b>Vocational Undergraduate Course (3 years):</b><br> 1. ARITIFICIAL INTELLIGENCE & ROBOTICS <br> 
+    2. CLOUD COMPUTING <br> 3. DATA ANALYTICS <br> 4. INFORMATION MANAGEMENT & CYBER SECURITY"
+      buttons: 
+      - title: "Information Technology"
+        payload: '/IT'
+      - title: "Computer Engineering"
+        payload: '/COMPS'
+      - title: "Civil Engineering"
+        payload: '/CIVIL'
+      - title: "Artificial Intelligence and Machine Learning Engineering"
+        payload: '/AIML'
+      - title: "Data Engineering"
+        payload: '/DATA'
+
+  utter_IT:
+    - text: "The department of Information and Technology aspire to establish a system of Quality Assurance on continuous basis, evaluate and monitor teaching-learning process. Universal college has excellent connections with IT Companies based in Mumbai, Bangalore, Hyderabad and Gurgaon.
+              <br><b>Total Number of Seats:</b> 60   
+              <br><b>CAP:</b> 48    
+              <br><b>Institute Level:</b> 12 "
+      buttons:
+        - title: "List of IT Faculties"
+          payload: '/it_faculties'
+        - title: "IT Syllabus"
+          payload: '/it_syllabus'
+        - title: "Latest IT e-Newsletter"
+          payload: '/it_newsletter'
+
+  utter_COMPS:
+    - text: ""
+      buttons:
+        - title: "List of COMPUTER Engineering Faculties"
+          payload: '/comps_faculties'
+        - title: "COMPS Syllabus"
+          payload: '/comps_syllabus'
+
+  utter_CIVIL:
+    - text: ''
+      buttons:
+        - title: "List of CIVIL Engineering Faculties"
+          payload: '/civil_faculties'
+        - title: "CIVIL engineering Syllabus"
+          payload: '/civil_syllabus'
+  
+  utter_AIML:
+    - text: ''
+      buttons:
+        - title: "List of AIML Engineering Faculties"
+          payload: '/aiml_faculties'
+        - title: "AIML Syllabus"
+          payload: '/aiml_syllabus'
+  
+  utter_DATA:
+    - text: ''
+      buttons:
+        - title: "List of DATA Engineering Faculties"
+          payload: '/data_faculties'
+        - title: "DATA Engineering Syllabus"
+          payload: '/data_syllabus'
+
+  utter_it_faculties:
+    - text: " <b><u>IT-FACULTIES:</u></b><br>
+             - <b>Prof. Yogita Mane, Head of the Department</b>.<br>
+             - Prof. Allan Lopes, Assistant Professor.<br>
+             - Prof. Jigar Chauhan, Assistant Professor.<br>
+             - Prof. Mudra Doshi, Assistant Professor.<br>
+             - Prof. Megha Naik, Assistant Professor.<br>
+             - Prof. Rovina D’britto, Assistant Professor.<br>
+             - Prof. Akshay Agrawal, Assistant Professor.<br>
+             - Prof. Sanketi Raut, Assistant Professor."
+      buttons:
+      - title: "IT Syllabus"
+        payload: '/it_syllabus'
+      - title: "Latest IT e-Newsletter"
+        payload: '/it_newsletter'
+
+  utter_comps_faculties:
+    - text: ''
+      buttons:
+      - title: "COMPS Syallbus"
+        payload: '/comps_syllabus'
+
+  utter_civil_faculties:
+    - text: ''
+      buttons:
+      - title: "CIVIL Engineering Syallbus"
+        payload: '/civil_syllabus'
+  
+  utter_aiml_faculties:
+    - text: ''
+      buttons:
+      - title: "AIML Syallbus"
+        payload: '/aiml_syllabus'
+  
+  utter_data_faculties:
+    - text: ''
+      buttons:
+      - title: "DATA Engineering Syallbus"
+        payload: '/data_syllabus'
+  
+  utter_it_syllabus:
+    - text: 'Download Syllabus for Information Technology Course from SE to BE by <a href="https://muquestionpapers.com/download/syllabus/IT/SE%20to%20BE-IT_CBCGS_Syllabus.pdf" target="_blank">Clicking here</a>'
+      buttons:
+      - title: "List of IT faculties"
+        payload: '/it_faculties'
+      - title: "Latest IT e-Newsletter"
+        payload: '/it_newsletter'
+
+  utter_comps_syllabus:
+    - text: ''
+      buttons:
+      - title: "List of COMPUTER Engineering faculties"
+        payload: '/comps_faculties'
+
+  utter_civil_syllabus:
+    - text: ''
+      buttons:
+      - title: "List of CIVIL Engineering faculties"
+        payload: '/civil_faculties'
+  
+  utter_aiml_syllabus:
+    - text: ''
+      buttons:
+      - title: "List of AIML Engineering faculties"
+        payload: '/aiml_faculties'
+  
+  utter_data_syllabus:
+    - text: ''
+      buttons:
+      - title: "List of DATA Engineering faculties"
+        payload: '/data_faculties'
+
+  utter_it_newsletter:
+    - text: 'Read our Latest e-Newsletter of IT Department by <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2020/04/April-2020.pdf" target="_blank">Clicking Here</a>'
+      buttons:
+      - title: "List of IT faculties"
+        payload: '/it_faculties'
+      - title: "IT Syllabus"
+        payload: '/it_syllabus'
+
+  utter_department_h:
+    - text: "<b>कॉलेज में यह कोर्स उपलब्ध है :</b><br>1.इनफार्मेशन टेक्नोलॉजी(IT)<br> 2.कंप्यूटर इंजीनियरिंग(COMPS)<br> 3.सिविल इंजीनियरिंग(CIVIL)<br> 4.डाटा इंजीनियरिंग(DATA)<br>5.आर्टिफीसियल इंटेलिजेंस और मशीन लर्निंग(AI&ML)<br><br>
+      <b>व्यावसायिक कोर्स (३ साल का होगा):</b><br>1.आर्टिफीसियल इंटेलिजेंस और रोबोटिक्स <br>2.क्लाउड  कंप्यूटिंग <br>3.डाटा एनालिटिक्स <br>4.इनफार्मेशन मैनेजमेंट और साइबर  सिक्योरिटी "
+      buttons:
+      - title : "🔙"
+        payload: '/back'
+
+  utter_fees:
+    - text: "Fee structure"
+      image: "https://i.imgur.com/5Ph3IqU.jpg"
+      buttons:
+      - title: "Payment Methods"
+        payload: '/payment'
+ 
+  utter_fees_h:
+    - text: "कॉलेज फीस डिटेल्स"
+      buttons:  
+      - title: "फीस अमाउंट"
+        payload: '/fees_h'
+      - title: "पेमेंट के तरीके"
+        payload: '/payment_h'
+      - title: "स्कॉलरशीप"
+        payload: '/scholarship_h'
+      - title : "🔙"
+        payload: '/back'
+
+  utter_transport_way_h:
+    - text: "<b>कॉलेज पूछने के तरीके:</b><br> कॉलेज द्वारा बस सुविधा भी उपलब्ध है और कॉलेज पहोचने के दूसरे तरिके भी है जैसे:<br> 1.लोकल ट्रैन <br> 2.स्टेट ट्रांसपोर्ट बस <br> 3.शेयर ऑटो<br><br> 
+      <b>सबसे नाज़िक स्टेशन:</b><br> 1.कमान: ३km <br> 2.नैगाओं : १२km <br> 3.वसई : १५km <br><br>
+      <b>कॉलेज में पार्किंग की भी सुविधा है |</b>"
+  
+  utter_fees_details:
+    - text: "फीस डिटेल्स:<br> 1. FE : ₹ ९००००/- <br> 2. SE : ₹ १०००००/- <br> 3. TE : ₹ ११००००/- <br> 4. BE : ₹ १२००००/- |"
+  
+  utter_admission_h:
+    - text: "प्रवेश की जानकारी :"
+      buttons:
+      - title: "प्रवेश की अनुसूची"
+        payload: '/admission_schedule_h'
+      - title: "प्रवेश की आवश्यकता"
+        payload: '/admission_criteria_h'
+      - title: "आवश्यक दस्तावेज़"
+        payload: '/document_h'
+      - title: "शैक्षणिक कैलेंडर"
+        payload: '/academic_calendar_h'
+      - title: "इन्टेक"
+        payload: '/intake_h'
+      - title: "कट ऑफ"
+        payload: '/cutoff_h'
+      - title: "मेरिट लिस्ट"
+        payload: '/merit_h'
+      - title: "DTE कोड "
+        payload: '/dte_h'
+      - title : "🔙"
+        payload: '/back'
+
+  utter_college_h:
+    - text: "कॉलेज"
+      buttons:
+      - title: "कॉलेज की जानकारी"
+        payload: '/about_college_h'
+      - title: "प्रिंसिपल"
+        payload: '/principal_h'
+      - title: "कॉलेज का समय"
+        payload: '/college_timing_h'
+      - title: "अटेंडेंस क्राइटेरिया"
+        payload: '/attendance_h'
+      - title: "कॉलेज की तस्वीर"
+        payload: '/images_h'     
+      - title: "इवेंट्स"
+        payload: '/events_h'
+      - title: "आई डी कार्ड के लिए अर्जी"
+        payload: '/applying_id_h'
+      - title : "🔙"
+        payload: '/back'  
+
+  utter_intake_h: 
+    - text: "हर डिपार्मेंट के लिए सीट्स :<br> 1. IT - ६० सीट्स <br> 2. COMPS - १२० सीट्स <br> 3. CIVIL - ६० सीट्स <br> 4. AL&ML - १२०  सीट्स <br> 5. DATA - ६० सीट्स <br><br>
+      <b>व्यावसायिक कोर्स के लिए :</b> ३० सीट्स |"
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+
+  utter_cutoff_h:
+    - text: "हर डिपार्मेंट के कटऑफ परसेंटेज:<br> 1. IT - ६०% <br> 2. COMPS - ६५% <br> 3. CIVIL - ५५%<br> 4. AL&ML - ६४%<br> 5. DATA - ६३%"
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+
+  utter_document_h:
+    - text: "डाक्यूमेंट्स"
+      buttons:
+      - title: "जरूरी डाक्यूमेंट्स"
+        payload: '/docs_h'
+      - title: "गुजराती माइनॉरिटी के लिए जरूरी डाक्यूमेंट्स"
+        payload: '/minority_h'
+      - title: "रिजर्व्ड केटेगरी के लिए जरूरी डाक्यूमेंट्स"
+        payload: '/reserved_h'
+      - title : "🔙"
+        payload: '/back2'
+
+  utter_docs_h:
+    - text: "एडमिशन के लिए जरूरी डाक्यूमेंट्स :<br> 1. SSC मार्कशीट | <br> 2. HSC मार्कशीट | <br> 3. स्कूल लीविंग सर्टिफिकेट | <br> 4. छात्र के 5 पासपोर्ट साइज फोटोग्राफ |"
+
+  utter_minority_h:
+    - text: "कम्युनिटी सर्टिफिकेट दर्शाता है , की स्टूडेंट गुजराती भाषा से सम्बंधित है |" 
+
+  utter_reserved_h:
+    - text: " SC/ST/OBC/SPC स्टूडेंट के लिए कास्ट सर्टिफिकेट देना होगा |"
+
+  utter_dte_code:
+    - text: "The DTE code for college is 3460."
+
+  utter_dte_h:
+    - text: "कॉलेज का DTE कोड 3460 है |"
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+  
+  utter_busid_h:
+    - text: "बस आई डी कार्ड के लिए एडमिन ऑफिस जाइये |"
+      
+  utter_college_id_h:
+    - text: "कॉलेज आई डी कार्ड बनने के लिए एडमिन ऑफिस जाए |"
+      
+  utter_library_card_h:
+    - text: " लाइब्रेरी कार्ड बनने के लिए लाइब्रेरी जाए |"
+      
+  utter_attendance_h:
+    - text: "सभी स्टूडेंट्स की अटेंडेंस कम से कम 75% होनी चाहिए |"
+      buttons:
+      - title : "🔙"
+        payload: '/back3'
+
+  utter_locker_facility_h:
+    - text: "स्टूडेंट्स को लॉकर की सुविधा दी जाती है |"
+    
+  utter_wifi_facility_h:
+    - text: "कॉलेज का वाई फाई है जिसे स्टूडेंट्स उसे कर सकते है |"
+
+  utter_sports_room_h:
+    - text: "कॉलेज में खेल कक्ष और मैदान की भी सुविधा है , यहाँ पर छात्रों भीतरी और बाहरी खेल खेलसक्ते है जैसे की क्रिकेट , फुटबॉल , चैस , कर्रम इत्यादि |"
+     
+  utter_applying_id_h:
+    - text: "आई डी कार्ड अप्लीकेशन"
+      buttons:
+      - title: "कॉलेज आई डी"
+        payload: '/college_id_h'
+      - title: "लाइब्रेरी आई डी"
+        payload: '/library_card_h'
+      - title: "बस आई डी"
+        payload: '/busid_h'
+      - title : "🔙"
+        payload: '/back3'
+ 
+  utter_placement_h:
+    - text: "प्लेसमेंट"
+      buttons:
+      - title: "TPO ऑफिस "
+        payload: '/TPO_h'
+      - title: "प्लेसमेंट-डिटेल्स"
+        payload: '/placement_detail_h'
+      - title : "🔙"
+        payload: '/back'
+ 
+  utter_TPO_h:
+    - text: "प्लेसमेंट ऑफिस दूसरे (2) माले पर है |"
+    
+  utter_placement_detail_h:
+    - text: 'प्लेसमेंट के लिए  व्हाट्सप्प ग्रुप (whatsapp grp) भी है,<br> TPO अफसर :<b>Mr. वेंकटेश</b> को संपर्क करें<br> और जानकारी के लिए <a href="https://universalcollegeofengineering.edu.in/placements/student-training-development/" target="_blank">यहाँ पर क्लिक करे</a> |'
+  
+  utter_academic_calendar_h:
+    - text: 'अकादमिक कैलेंडर डाउनलोड करने क लिए <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2020/01/2019-20-EVEN-academic-calendar.pdf" target="_blank">यहाँ क्लिक करे</a> |'
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+
+  utter_facility_h:
+    - text: "फैसिलिटीज"
+      buttons:
+      - title: "बस-सर्विस"
+        payload: '/bus_service_h'
+      - title: "कैंटीन"
+        payload: '/canteen_h'
+      - title: "लॉकर"
+        payload: '/locker_facility_h'
+      - title: "इंटरनेट"
+        payload: '/wifi_facility_h'
+      - title: "खेल कक्ष"
+        payload: '/sports_room_h'
+      - title : "🔙"
+        payload: '/back'
+  
+  utter_welcome:
+    - text: " You're 'welcome  👍 "
+    - text: "Welcome"
+    - text: "No problem 👌"
+    
+  utter_display:
+    - text: "Here it is :"
+      image: "https://threebestrated.in/images/UniversalCollegeofEngineering-VasaiVirar-MH.png" 
+    - text: "Here:"
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/UCoE-Build-2.jpg"  
+    - text: "Here's what college looks like:"
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/lush-green-campus.jpg"
+
+  utter_display_h:
+    - text: "यह है यूनिवर्सल कॉलेज ऑफ़ इंजीनियरिंग: |"
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/UCoE-Build-2.jpg"
+      buttons:
+      - title: "🔙"
+        payload: '/back3'
+    - text: "यह है यूनिवर्सल कॉलेज ऑफ़ इंजीनियरिंग: |"
+      image: "https://threebestrated.in/images/UniversalCollegeofEngineering-VasaiVirar-MH.png"
+      buttons:
+      - title: "🔙"
+        payload: '/back3'
+
+  utter_examination:
+    - text: 'Download Examination Schedule By <a href="https://pdfhost.io/v/72oq.5SYI_EXAMDOC2020.pdf" target="_blank">Click Here</a>'
+                    
+  # -text: "Hall tickets are provided a week before exams commences. A message will be sent informing about the date and time to collect the hall ticket. Marksheets can be collected on every working friday."
+  # -text: "Revaluation results take almost a month after the last date fees has been paid."
+    
+  utter_payment:
+    - text: "Different payment methods are through Demand draft / pay order / credit card 💳 (excluding Amex card) / debit card."
+      buttons:
+      - title: "Payment Last-Date"
+        payload: '/payment_date'
+
+  utter_payment_date:
+    - text: "Last date to pay the fees for academic year is 31st august 2019."  
+      buttons: 
+      - title: "Scholarship Details"
+        payload: '/scholarship'
+ 
+  utter_payment_h:
+    - text: "पेमेंट डिमांड ड्राफ्ट/ पे आर्डर/ क्रेडिट कार्ड/ डेबिट कार्ड से की जा सकती है <br> पेमेंट करने का आखरी दिन 31 अगस्त 2019 को है |"
+      
+  utter_scholarship:
+    - text: "Yes college provides scholarships 🎓."
+
+  utter_scholarship_h:
+    - text: "हाँ स्कॉलरशिप की सुविधा उपलब्ध है 🎓|"
+
+  utter_admission_schedule:
+    - text: 'Full Admission Schdule can be downloaded by <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/Admission-Schedule.pdf" target="_blank">Clicking Here</a>
+            <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/UCoE-Admission-Advt-2019.jpg"
+      buttons:
+      - title: "Eligibility Criteria"
+        payload: '/admission_criteria'
+      - title: "Admission related Documents"
+        payload: '/admission_documents'
+      - title: "Last Date of Admission"
+        payload: '/last_date_admission'
+      - title: "DIPLOMA ADMISSION"
+        payload: '/diploma_admissions'
+
+  utter_admission_schedule_h:
+    - text: 'एडमिशन शिड्यूल की जानकारी पाने क लिए <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/Admission-Schedule.pdf" target="_blank">यहाँ क्लिक करे</a>'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/UCoE-Admission-Advt-2019.jpg"
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+      
+  utter_admission_documents:
+    - text: 'Documents required for admission:<br> 1. 10th std marksheet <br> 2. 12th std marksheet <br> 3. School leaving certificate <br> 4. 5 passport size photgraphs of the student <br> For more details <a href="https://universalcollegeofengineering.edu.in/courses-admissions/admissions/documents-required/" target="_blank">Click Here</a>'
+      buttons:
+      - title: "Admission Schedule"
+        payload: '/admission_schedule'
+      - title: "Eligibility Criteria"
+        payload: '/admission_criteria'
+      - title: "Last Date of Admission"
+        payload: '/last_date_admission'
+
+  utter_admission_criteria:
+    - text: '1) Candidate should be Indian National <br> 2) Student should have passes HSC or 10+s equivalent with subjects Physics, Maths, Chemistry, English <br> 3) Secured minimum of 50% marks ie. 150 out of 300 in Physics, Maths, Chemistry, English.<br> For more info <a href="https://universalcollegeofengineering.edu.in/courses-admissions/admissions/admission-eligibility/" target="_blank">Click Here </a>'
+      buttons:
+      - title: "Admission Schedule"
+        payload: '/admission_schedule'
+      - title: "Admission related Documents"
+        payload: '/admission_documents'
+      - title: "Last Date of Admission"
+        payload: '/last_date_admission'
+
+
+  utter_admission_criteria_h:
+    - text: '1) छात्र भारतीय नागरिक होना चाइये |<br> 2) छात्र फिजिक्स, गणित, केमेस्टरी, अंग्रेजी विषयों के साथ HSC या 10 + पास होना चाहिए | <br> 3) न्यूनतम 50% अंक यानी फिजिक्स , गणित, केमेस्टरी, अंग्रेजी में 300 में से 150 अंक | <br> ज्यादा जानकारी के लिए <a href="https://universalcollegeofengineering.edu.in/courses-admissions/admissions/admission-eligibility/" target="_blank">यहाँ क्लिक करे |</a>'
+      buttons:
+      - title : "🔙"
+        payload: '/back2' 
+
+  utter_diploma_schedule:
+    - text: "<b>DIPLOMA ADMISSION for 2020-21 Batch</b> is Scheduled on 1st August 2020."
+
+  utter_diploma_documents:
+    - text: "<b>DIPLOMA DOCUMENTS:</b> <br> 1.All Diploma Semesters Marksheets and College Leaving Certificate <br> 2. 10th & 12th Std Marksheet."
+
+  utter_diploma_criteria:
+    - text: "<b>DIPLOMA CRITERIA:</b> <br> Candidate should secured minimum 65%."
+
+  utter_diploma_full_details:
+    - text: "<b>DIPLOMA ADMISSION for 2020-21 Batch</b> is Scheduled on 1st August 2020 <br> <b>DIPLOMA DOCUMENTS:</b> <br> 1.All Diploma Semesters Marksheets and College Leaving Certificate <br> 2. 10th & 12th Std Marksheet <br> <b>DIPLOMA CRITERIA:</b> <br> Candidate should secured minimum 65%"
+    
+  utter_intake:
+    - text: "<b>INTAKE:</b><br>1.INFORMATION TECHNOLOGY:<b>60 Seats</b> <br>2.COMPUTER ENGINEERING:<b>120 Seats</b> <br>3.CIVIL ENGINEERING:<b>60 Seats</b> <br>4.DATA ENGINEERING:<b>60 Seats</b> <br>5.ARITIFICIAL INTELLIGENCE AND MACHINE LEARNING: <b>120 Seats</b><br><br>
+    Intake for all Vocational Undergraduate Course: <b>30 Seats Each</b>"
+      buttons:
+      - title: "Cutoff"
+        payload: '/cutoff'
+
+  utter_merit:
+    - text: "3 merit list will be displayed."
+
+  utter_merit_h:
+    - text: "३ मेरिट लिस्ट लगायी जायेगी |"
+      buttons:
+      - title : "🔙"
+        payload: '/back2'
+
+  utter_brochure:
+    - text: 'Download College Brochure by <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2020/05/UCoE-Prospectus-2020-21.pdf" target="_blank">Clicking Here</a>'
+
+  utter_brochure_h:
+    - text: 'कॉलेज ब्रोशर डाउनलोड करने के लिए <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2020/05/UCoE-Prospectus-2020-21.pdf" target="_blank">यहाँ क्लिक करे </a> |'
+      buttons:
+      - title : "🔙"
+        payload: '/back'
+
+  utter_food:
+    - text: "Today's Menu 🍽:<br>" 
+      image: "https://imgur.com/Bb5admc.jpg"  
+      
+  utter_canteen_h:
+    - text: " कैंटीन कुछ उत्कृष्ट कॉफी ☕, मनोरम भोजन और आरामदायक वातावरण के लिए एक जगह है , गरम और ठन्डे ड्रिंक्स, कई तरह के भोजन 🍲 और स्नैक्स यहाँ मिलते है |"
+      image: "https://i.imgur.com/7q2hVtm.png"
+      buttons:
+      - title: "लंच मेनू "
+        payload: '/menu_h'
+      - title : "🔙"
+        payload: '/back'
+        
+  utter_canteen_menu:
+    - text: "कैंटीन लंच मेनू 🍽: <br> "   
+      image: "https://i.imgur.com/Bb5admc.jpg" 
+      
+  utter_faculty_name:
+    - text: "HOD of Applied Science & Humanities :<b>Mr.Shivam Shukla</b> <br>
+             HOD of Information Techology :<b> Ms.Yogita Mane</b> <br>
+             HOD of Computer Engineering :<b> Dr.Jitendra Saturwar</b> <br>
+             HOD of Civil : <b>Mr.Rajesh Dubey</b> <br>
+             HOD of Electronics :<br><b> Ms.Mildrer Pereira</b> <br>
+             HOD of Electronics & Telecommunication :<br><b> Ms.Kaveri Sawant</b>"
+
+  utter_principal:
+    - text: 'Our college principal is<br> Dr. J.B.Patil<br>To meet Principal you have take to prior appointment<br> Timings: 10.00 am to 4.00 PM <br>To Read message from our Principal <a href="https://universalcollegeofengineering.edu.in/about-us/message-from-the-principal/" target="_blank">Click Here</a>'
+      buttons:
+      - title: 'Chairperson'
+        payload: '/founder'
+
+    - text: 'Principal of UCOE is<br> Dr. J.B.Patil <br>To meet Principal you have take to prior appointment<br> Timings: 10.00 am to 4.00 PM <br>To Read message from our Principal <a href="https://universalcollegeofengineering.edu.in/about-us/message-from-the-principal/" target="_blank">Click Here</a>'
+      buttons:
+      - title: 'Chairperson'
+        payload: '/founder'
+      
+  utter_principal_h:
+    - text: 'कॉलेज के प्रिंसिपल<br>Dr. J.B.Patil है, <br>हमारे प्रिंसिपल को मिलने के लिए अपॉइंटमेंट लेना जरूरी है, समय 10:00 AM से <br> 4:00 PM ज्यादा जानकारी के लिए <a href="https://universalcollegeofengineering.edu.in/about-us/message-from-the-principal" target="_blank">यहाँ क्लिक करे</a> |'
+      buttons:
+      - title : "🔙"
+        payload: '/back3'
+
+  utter_about_college:
+    - text: "<b><u>ABOUT US:</u></b><br>Embraced by lush greenery 🌴 and scenic beauty 🌄, Universal College of Engineering is a treasured place for aspiring engineers to leave their imprints towards success 🎓.<br><br>
+    Our institute has been accredited by National Assessment and Accreditation Council (NAAC) with <b>B+ grade</b> in the first cycle of accreditation. To see the NAAC Certificate <a href = 'https://docdro.id/ErNrBCY' target='_blank'> Click Here </a>. <br><br>
+    Our institute has <b>Ranked No.1</b>🥇 by Times of India in Top Emerging Private Engineering Institutes for 5 consecutive years 2015-19.<br><br>
+    Universal college of Engineering is a Gujarati Linguistic Minority Institution<br><br>
+    <b>Affiliation Details:</b><br>UCOE is approved by <b>AICTE</b> (All India Council for Technical Education) & Affilated to the <b>University of Mumbai</b>.<br>
+    DTE Code: <b>3460</b>"
+
+  utter_about_college_h:
+    - text: "<b><u>कॉलेज की जानकारी</u></b><br> हमारी कॉलेज , नेशनल असेसमेंट और अक्क्रेडिटशन कौंसिल से <b>बी + ग्रेड</b> मान्यता प्राप्त  है | प्रमाणपत्र देख ने के लिया इस्पे  <a href = 'https://docdro.id/ErNrBCY' target='_blank'> क्लिक करे  </a> | <br><br> हमारी कॉलेज को टाइम ऑफ़ इंडिया ने लगातार पांच साल से <b>सबसे तेज उभरती संस्था</b> घोषित किया है | <br><br> हमारी कॉलेज AICTE और मुंबई विद्यापीठ से असंबद्धक है | <br><br> हमारी कॉलेज गुजराती भाषाई अल्पसंख्यक संस्था है |"
+      buttons:
+      - title: "🔙"
+        payload: '/back3'
+        
+  utter_back:
+    - text: "आपकी क्या मदद कर सकता हूँ |"
+      buttons:  
+      - title: "प्रवेश"
+        payload: '/admission_h'
+      - title: "कॉलेज"
+        payload: '/college_h'
+      - title: "स्थान"
+        payload: '/location_search_h'
+      - title: "विभाग"
+        payload: '/department_h'
+      - title: "फीस"
+        payload: '/fees_h_btn'
+      - title: "प्लेसमेंट"
+        payload: '/placement_h'
+      - title: "सुविधाएं"
+        payload: '/facility_h'
+      - title: "ब्रोशर"
+        payload: '/brochure_h'
+      - title: "प्रतिक्रिया"
+        payload: '/feed_h'
+  
+  utter_back_2:
+    - text: "प्रवेश की जानकारी :"
+      buttons:
+      - title: "प्रवेश की अनुसूची"
+        payload: '/admission_schedule_h'
+      - title: "प्रवेश की आवश्यकता"
+        payload: '/admission_criteria_h'
+      - title: "आवश्यक दस्तावेज़"
+        payload: '/document_h'
+      - title: "शैक्षणिक कैलेंडर"
+        payload: '/academic_calendar_h'
+      - title: "इन्टेक"
+        payload: '/intake_h'
+      - title: "कट ऑफ"
+        payload: '/cutoff_h'
+      - title: "मेरिट लिस्ट"
+        payload: '/merit_h'
+      - title: "DTE कोड "
+        payload: '/dte_h'
+      - title : "🔙"
+        payload: '/back'
+
+  utter_back_3:
+    - text: "कॉलेज"
+      buttons:
+      - title: "कॉलेज की जानकारी"
+        payload: '/about_college_h'
+      - title: "प्रिंसिपल"
+        payload: '/principal_h'
+      - title: "कॉलेज का समय "
+        payload: '/college_timing_h'
+      - title: "अटेंडेंस क्राइटेरिया"
+        payload: '/attendance_h'
+      - title: "कॉलेज की तस्वीर"
+        payload: '/images_h'     
+      - title: "इवेंट्स"
+        payload: '/events_h'
+      - title: "आई डी कार्ड के लिए अर्जी"
+        payload: '/applying_id_h'
+      - title : "🔙"
+        payload: '/back'  
+    
+  utter_college_reopen:
+    - text: "College will reopen when Government of Maharashtra and University of Mumbai Declares any official notice."
+    
+  utter_last_date_admission:
+    - text: "The last date of admission is 24th July 2020."
+    
+  utter_college_timing:
+    - text: "College timings are from 9am to 5pm, College remains closed during public holidays, Sundays, 2nd and 4th Saturday."
+
+  utter_college_timing_h:
+    - text: "कॉलेज सुबह ९ से शाम ५ बजे तक खुला रहता है | <br>बैंक हॉलीडेज, हफ्ते के 2nd और 4th शनिवार और रविवार को कॉलेज बंद रहता है |"
+      buttons:
+      - title : "🔙"
+        payload: '/back3'
+
+  utter_minority:
+    - text: "Universal college of Engineering is a Gujarati Linguistic Minority Institution. "
+    
+  utter_reservation:
+    - text: " Yes we have reservation for OBC/ST/SC/NT1/NT2 Students.<br>The documents required for reserved candidates is the caste certificate."
+    
+  utter_attendance_criteria:
+    - text: "Students should have minimum of 75% attendance."
+
+  utter_facility:
+    - text: "We have various facilities available like: <br>- Bus Service <br>- Lockers for students<br>- Boys Common room<br>- Girls Common Room <br>- High Speed Wi-Fi <br>- Sports Room <br>- Library<br>- Computer Labs <br>- Hygienic Canteen and many more"
+      buttons:
+      - title: "Bus Service"
+        payload: '/bus_service'
+      - title: "Lockers"
+        payload: '/locker_facility'
+      - title: "WiFi"
+        payload: '/wifi_facility'
+      - title: "Canteen"
+        payload: '/canteen'
+      - title: "Library"
+        payload: '/ask_library'
+      - title: "Common Room"
+        payload: '/bcr_facility'
+      - title: "Sports Room"
+        payload: '/sports_room'
+
+  utter_canteen:
+    - text: "Literati café is a place for some outstanding coffee ☕, delectable food 🍽 and a relaxing atmosphere. Hot beverages define the menu, but there is also an extensive selection of Indian snacks and meals🍱"
+      image: "https://i.imgur.com/7q2hVtm.png"
+      buttons:
+      - title: "Today's Menu 🍽"
+        payload: '/food'
+
+  utter_locker_facility:
+    - text: "Yes every student is provided with a locker. The size of the lockers is large enough to store their project work and their study material.
+            <br>(Click on image to see in Full Resolution)"
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/lockers.jpg"
+
+  utter_wifi_facility:
+    - text: "College provides wifi facility 📶"
+
+  utter_non_veg:
+    - text: "No non-veg food is provided."
+      image: "https://imgur.com/Bb5admc.jpg"
+    - text: "No non-veg food is served."
+      image: "https://imgur.com/Bb5admc.jpg"
+    
+  utter_hostel:
+    - text: "No there is no 🏨 hostel service provided by the college."
+
+  utter_bcr_gcr:
+    - text: "State-of-the-art separate common rooms for boys and girls are a part of our thoroughly professional infrastructure. Students can play chess, stretch themselves for a while, watch news channels, etc. during the non-classroom hours.
+            <br>(Click on image to see in Full Resolution)"
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/common-room.jpg"
+
+  utter_sports_room:
+    - text: "In order to promote sports amongst the student, the college has facility for both Outdoor & Indoor Sports.<br> <b>Outdoor Sports</b> like Cricket 🏏,Football ⚽,Handball etc.<br> <b>Indoor Sports</b> like Table Tennis 🏓,Chess ♟️,Carrrom etc."
+      
+  utter_cutoff:
+    - text: "Cutoff percentage for departments:<br> 1. IT - 60% <br> 2. COMPS - 65% <br> 3. CIVIL - 55%<br> 4. AL&ML - 65%<br> 5. DE - 63%"
+      buttons:
+      - title: "Intake"
+        payload: '/intake'
+
+  utter_ucoe:
+    - text: "UCOE stands Universal College of Engineering"
+    
+  utter_events:
+    - text:  'We at UCoE organize many Inter-college events, <br>VYRO-National-level Tech Fest, <br>Hackstomp - 24 Hrs Hackathon, <br>SOUL of Universal,<br>Cultural Events and more<br><a href="https://universalcollegeofengineering.edu.in/enrichment-activities/" target="_blank">Click Here for More</a>'
+      buttons:
+      - title: "VYRO"
+        payload: '/vyro'
+      - title: "Hackstomp"
+        payload: '/hackstomp'
+      - title: "Tantrostav"
+        payload: '/tantrostav'
+      - title: "IETE"
+        payload: '/IETE'
+      - title: "Aurora"
+        payload: '/aurora'
+
+  utter_events_h:
+    - text: 'यहाँ कई इंटर कॉलेज प्रतियोगिता होती है जैसे की, <br>VYRO-National-level Tech Fest, <br>Hackstomp - 24 Hrs Hackathon, <br>SOUL of Universal, Cultural Events<br>IETE, इत्यादि<br> ज्यादा जानकारी के लिए <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/" target="_blank">यहाँ क्लिक करे</a> |'
+      buttons:
+      - title : "🔙"
+        payload: '/back3'
+
+  utter_technical_events:
+    - text: "We at UCoE Organize Many Technical Events like VYRO-National-level TechFest, Hackstomp, Tantrostav, IETE Paper and Project Presentation"
+      buttons:
+      - title: "VYRO"
+        payload: '/vyro'
+      - title: "Hackstomp"
+        payload: '/hackstomp'
+      - title: "Tantrostav"
+        payload: '/tantrostav'
+      - title: "IETE"
+        payload: '/IETE'
+
+  utter_hackstomp_date:
+    - text: "Hackstomp is to be held on 14th and 15th February 2020."
+    
+  utter_hackstomp:
+    - text: "Hackstomp is 24 hours Hackathon 👨‍💻 organised by information technology department under ITSA of Universal College of Engineering."
+ 
+  utter_IETE_schedule:
+    - text: "IETE is scheduled on 13th March 2020."
+
+  utter_IETE:
+    - text: 'The IETE focuses on advancement of the Science and Technology of Electronics, Telecommunication, Computers, Information Technology and related areas.<br> Universal College of Engineering organised many events like Project Exhibition and Poster Presentation under IETE. <br>For more details  <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/iete/" target="_blank">Click Here</a>.'
+  
+  utter_vyro_schedule:
+    - text: "Vyro is scheduled on 13th February"
+
+  utter_vyro:
+    - text: "This is a technical 👨‍💻 as well as non-technical 🎉 event organised by Universal College of Engineering every year.<br>
+            Students from various colleges across Mumbai, Thane and Palghar district enthusiastically participated in Vyro bash."
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/vyro-1.jpg"
+  
+  utter_aurora_schedule:
+    - text: "AURORA is scheduled from 11th January 2020 - 18th January 2020."
+
+  utter_aurora:
+    - text: 'AURORA is sports and cultural intra college competition held in college 🏆. Here there is competition for shield between the departments.'
+  
+  utter_tantrostav:
+    - text: "Tantrostav is Inter-college Technical Event for All branch students, various coding/programming, electrical and civil activities and competition are held."
+
+  utter_extra_activities:
+    - text: "At UCoE we have many extra curricular activities and technical clubs for students for sharing and learning skills like <br>CSI, e.yantra, IEEE,<br>International Society of Automation,<br> NSS, Organic Farming,<br> Speak Club, Student Council,<br> Women Development Cell etc."
+      buttons:
+      - title: "CSI"
+        payload: '/csi'
+      - title: "IEEE"
+        payload: '/ieee'
+      - title: "e.yantra"
+        payload: '/eyantra'
+      - title: "NSS"
+        payload: '/nss'
+      - title: "International Society of Automation"
+        payload: '/automation'
+      - title: "Organic Farming"
+        payload: '/farming'
+      - title: "Student Council"
+        payload: '/scouncil'
+      - title: "Speak Club"
+        payload: '/speak_club'
+      - title: "Women Development Cell"
+        payload: '/wdcell'
+
+  utter_csi:
+    - text: 'Universal College of Engineering connected with the esteemed Computer Society of India (CSI) to form CSI-UCOE Student Chapter.<br>The inauguration of the Student Chapter took place on 13th October 2015 at Universal College of Engineering, Vasai. 
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/csi/" target="_blank">Click Here</a>
+              <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/Logo1.jpg"
+      buttons:
+      - title: "IEEE"
+        payload: '/ieee'
+      - title: "e.yantra"
+        payload: '/eyantra'
+      - title: "NSS"
+        payload: '/nss'
+      - title: "International Society of Automation"
+        payload: '/automation'
+  
+  utter_eyantra:
+    - text: 'e-Yantra lab, associated with IIT Bombay was established on 28th July 2016 in Universal College of Engineering.<br>e-Yantra Lab Setup Initiative (eLSI) is a college-level program under which colleges are encouraged to set up robotics labs.
+              For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/e-yantra/" target="_blank">Click Here</a>
+              <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/eyantra01.jpg"
+      buttons:
+      - title: "CSI"
+        payload: '/csi'
+      - title: "IEEE"
+        payload: '/ieee'
+      - title: "NSS"
+        payload: '/nss'
+      - title: "International Society of Automation"
+        payload: '/automation'
+       
+  utter_nss:
+    - text: 'The University of Mumbai has given support to the NSS and encourages all youth to join the program. The motto ‘NOT ME, BUT YOU’ underlines that the welfare of an individual is ultimately dependent on the welfare of the society as a whole.
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/nss/" target="_blank">Click Here</a>'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/NSS-06.jpg"
+      buttons:
+      - title: "Organic Farming"
+        payload: '/farming'
+      - title: "Student Council"
+        payload: '/scouncil'
+      - title: "Speak Club"
+        payload: '/speak_club'
+      - title: "Women Development Cell"
+        payload: '/wdcell'
+  
+  utter_ieee:
+    - text: 'The IEEE Information Theory Society (ITS or ITSoc), formerly the IEEE Information Theory Group, is a professional society of the Institute of Electrical and Electronics Engineers(IEEE) focused on several aspects of information: processing, transmission, storage and usage, and the “foundations of the communication process”.
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/ieee-activities/" target="_blank">Click Here</a>
+              <br>(Click on image to see in Full Resolution)'
+      buttons:
+      - title: "CSI"
+        payload: '/csi'
+      - title: "e.yantra"
+        payload: '/eyantra'
+      - title: "NSS"
+        payload: '/nss'
+      - title: "International Society of Automation"
+        payload: '/automation'
+  
+  utter_farming:
+    - text: 'One of the unique features of Universal College of Engineering is that it advocates absolute need of organic farming and really seems to understand its sustainability.<br>Students involve in agricultural activities in collaboration with local farmers with an aim of eliminating pesticide-laden vegetables the students under the guidance of skillful faculty initiated Organic Farming from 27th June 2017 and thus by supporting the farmers economically
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/organic-farming/" target="_blank">Click Here</a>
+              <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/organic-01.jpg"
+      buttons:
+      - title: "NSS"
+        payload: '/nss'
+      - title: "Student Council"
+        payload: '/scouncil'
+      - title: "Speak Club"
+        payload: '/speak_club'
+      - title: "Women Development Cell"
+        payload: '/wdcell'
+  
+  utter_automation:
+    - text: 'The International Society of Automation (www.isa.org) is a non-profit professional association that sets the standard for those who apply engineering and technology to improve the management, safety and cyber security of modern automation and control systems used across industry and critical infrastructure.
+              <br>The inauguration of the International Society of Automation took place on 29th January 2016 by the Department of Electronics and Telecommunication Engineering.
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/international-society-of-automation/" target="_blank">Click Here</a>'
+      buttons:
+      - title: "CSI"
+        payload: '/csi'
+      - title: "IEEE"
+        payload: '/ieee'
+      - title: "e.yantra"
+        payload: '/eyantra'
+      - title: "NSS"
+        payload: '/nss'
+  
+  utter_scouncil:
+    - text: 'Student council of Universal College of Engineering has a voice and a contribution to make our college activities successful. Active partnership between Student Council and faculty works effectively for the benefit of the entire college. It is important to give them opportunity to express their views on issues of concern to them in the college.
+            <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/speak-club/" target="_blank">Click Here</a>'
+      buttons:
+      - title: "CSI"
+        payload: '/csi'
+      - title: "IEEE"
+        payload: '/ieee'
+      - title: "Speak Club"
+        payload: '/speak_club'
+      - title: "Women Development Cell"
+        payload: '/wdcell'
+  
+  utter_wdcell:
+    - text: 'The Women’s Development Cell (WDC) aims to promote awareness on gender equality and gender sensitisation in the society and among students in particular. Towards this end, the students are encouraged to undertake various research projects, participate in debates and awareness campaigns. 
+              <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/women-development-cell/" target="_blank">Click Here</a>
+              <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/WDC.jpg"
+      buttons:
+      - title: "NSS"
+        payload: '/nss'
+      - title: "Organic Farming"
+        payload: '/farming'
+      - title: "Student Council"
+        payload: '/scouncil'
+      - title: "Speak Club"
+        payload: '/speak_club'
+  
+  utter_speak_club:
+    - text: 'The Computer Engineering department of Universal College of Engineering inaugurated the ‘Society for Promoting Ethics, Awareness and Knowledge – SPEAK CLUB’ on 30th March 2019, with an intention to promote social awareness, civic rights and responsibilities and social/corporate etiquettes among the students
+            <br>For more info <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/speak-club/" target="_blank">Click Here</a>
+            <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/SKC-02.jpg"
+      buttons:
+      - title: "Organic Farming"
+        payload: '/farming'
+      - title: "Student Council"
+        payload: '/scouncil'
+      - title: "Women Development Cell"
+        payload: '/wdcell'
+
+  utter_academic_calendar:
+    - text: 'To download Acadmic Calendar <a href="https://universalcollegeofengineering.edu.in/wp-content/uploads/2020/01/2019-20-EVEN-academic-calendar.pdf" target="_blank">Click Here</a>'
+    
+  utter_anti_ragging:
+    - text: 'At UCoE we have Anti-Ragging Cell, with strict policy <br> Know More <a href="https://universalcollegeofengineering.edu.in/enrichment-activities/anti-ragging-cell/" targt="_blank">By Clicking Here</a>'
+    
+  utter_applying_id:
+    - text: "New College Id can be applied at the admin office<br> and Fees is 100 Rs."
+
+  utter_library:
+    - text: 'Archivia – the library is a treasure house of thousands of books 📚, reference titles, annual reports, market studies, national & international newspapers 🗞️, national & international journals 📔, electronic journals, eBooks and iTunesU Podcasts.
+    <br>Faculty and students use the library alike as an invaluable resource for business information and as a quiet place to study.<br>
+    <br> For more info <a href = "https://universalcollegeofengineering.edu.in/about-us/our-campus/archivia-the-library/" target="_blank">Click here</a>'
+      buttons:
+      - title: "Library Timings"
+        payload: '/library_timings'
+      - title: "Apply for Library Card"
+        payload: '/library_card'
+      - title: "Library Details"
+        payload: '/library_details'
+    
+  utter_library_details:
+    - text: 'No. of Library Cards given to Students: <b>2</b> <br> Students can issue maximum <b>2 books</b> at a time <br> Book issue duration: <b>7 Days</b> <br> Fine for late book return: <b>Rs.5 per day</b>'
+      buttons:
+      - title: "Library Timings"
+        payload: '/library_timings'
+      - title: "Apply for Library Card"
+        payload: "/library_card"
+
+  utter_library_timing:
+    - text: 'Library Timings: 9.30 AM - 4.30 PM'
+      buttons:
+      - title: "Apply for Library Card"
+        payload: '/library_card'
+      - title: "Library Details"
+        payload: '/library_details'
+
+  utter_library_card:
+    - text: "Library card is issued by the librarian at the library on first floor."
+      buttons:
+      - title: "Library Timings"
+        payload: '/library_timings'
+      - title: "Library Details"
+        payload: '/library_details'
+
+  utter_placement:
+    - text: 'The Training and Placement (T&P) department is located at Universal College of Engineering, Kaman-Vasai.<br>The T&P department centrally handles placement for the students graduating in engineering programs.<br>For More Information <a href="https://universalcollegeofengineering.edu.in/placements/students-placement/" target="_blank">Click Here</a>'
+      buttons:
+      - title: "Placed Students"
+        payload: '/placed_student'
+      - title: "Companies"
+        payload: '/placement_companies'
+
+  utter_placed_students:
+    - text: 'At UCoE many B.E Students with good academic score and excellent technical knowledge are placed in good companies.
+              <br> To see the list <a href="https://universalcollegeofengineering.edu.in/placements/students-placement/" target="_blank">Click Here</a>'
+      buttons:
+      - title: "Companies"
+        payload: '/placement_companies'
+
+  utter_placement_companies:
+    - text: '🏢 Many good companies and startups comes to hire talented Final Year Students. These are some companies : 
+            <br> For More info <a href="https://universalcollegeofengineering.edu.in/placements/students-placement/" target="_blank">Click Here</a>
+            <br>(Click on image to see in Full Resolution)'
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/Company-Logo.jpg"
+
+  utter_goodbye:
+    - text: "Goodbye😄"
+    - text: "Bye 👋"
+    - text: "Talk to you later!👋🏻"
+    - text: "Bye-Bye👋"
+
+  utter_transport_way:
+    - text: "College provide paid bus service, but also you can reach college by Local Train, Shuttle Train, S.T Bus, Sharing vehicles(Rickshaw/TumTum) or by your own vehicle (We have parking facility)"
+      buttons:
+      - title: "Nearest Stations"
+        payload: '/nearest_station'
+
+  utter_distance:
+      - text: 'College distance:<br> 1. Borivali: 27km(40-45mins)<br> 2. Vasai: 16km(30-35mins)<br> 3. Naigaon: 24km(45mins)<br> 4.Thane: 32km(45mins)<br> 5. Bhiwandi: 20km(35mins)<br> 6. Kaman: 3km(7mins)<br> 7. Chinchoti: 5km(10-12mins)<br> To open with Google Maps <a href ="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target = "_blank">Click Here</a>'
+
+  utter_nearest_station:
+    - text: "Nearest Station:<br> 1. Kaman: 3km(10mins)<b>(Low Train frequency</b>)<br> 2. Naigaon: 12km(20mins)<br> 3. Vasai: 15km(25-30mins)<br>(Click on image to see in Full Resolution)"
+      image: "https://i.imgur.com/KlxqkVF.jpg"
+
+  utter_parking:
+    - text: "We have on campus parking faciliy for Two Wheeler and Four Wheeler Vechicles."
+
+  utter_concession:
+    - text: "Yes, college provides concession for Train and S.T Bus."
+
+  utter_who_am_i:
+    - text: "Hi i am UniBot, Here to help you with questions related to Universal College of Engineering."
+
+  utter_what_else:
+    - text: "For now I can provide you information about Admission, Fees, Examination, Location, Placements, Events, Photos of college and much more."
+  
+  utter_naac:
+    - text: "Our institute has been accredited by National Assessment and Accreditation Council (NAAC) with <b>B+ grade</b> in the first cycle of accreditation. <br><br> <b>To see the NAAC Certificate</b> <a href = 'https://docdro.id/ErNrBCY' target='_blank'> Click Here </a>. <br><br> <b>Naac Certification Process: </b> <a href = 'https://youtu.be/Pastneot-aw' target='_blank'>  Naac Visit Day1 </a> <br> <a href = 'https://youtu.be/QNZ4_-4e79g' target='_blank'> Naac Visit Day2 </a> "
+    
+  utter_unaided:
+    - text: "Universal College of Engineering is Permanently Unaided."
+
+  utter_affiliated:
+    - text: "Universal College of Engineering is Approved by AICTE, DTE and Affiliated to University of Mumbai."
+
+  utter_ict_classroom:
+    - text: "ICT enabled teaching tools like Audio-Video projector facility, Speaker facility, Lecture Capturing System are used in Universal College of Engineering."
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/clg-profile.jpg"
+      
+  utter_ac_classroom:
+    - text: "At UCoE we don’t have Air Conditioned Classrooms, But At Universal College of Engineering, a fun-filled learning space in the form of open-air classroom is set up for students."
+      image: "https://universalcollegeofengineering.edu.in/wp-content/uploads/2019/07/open-air-class.jpg"
+
+  utter_course_duration:
+    - text: "Duration of every course is 4 years if admitted in FE & Duration of every course is 3 years if admitted in direct second year through Diploma."
+
+  utter_ask_howold:
+    - text: "Old enough to be a bot"
+    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  
+  utter_ask_languagesbot:
+    - text: "I can say Hello in Hindi नमस्ते, but unfortunately English and Hindi are only languages I can answer you in."
+    - text: "I am in the process of learning, but at the moment I can only speak English & Hindi."
+ 
+  utter_ask_restaurant:
+    - text: "I am sorry I can’t recommend you a restaurant as I usually cook at home."
+    - text: "I guess you are in wrong place !"
+  
+  utter_ask_time:
+    - text: "It is the most wonderful time of the year!"
+  
+  utter_ask_wherefrom:
+    - text: "I was born in India, but I consider myself a citizen of the world."
+    - text: "I was born in the coolest city on Earth"
+  
+  utter_ask_whoami:
+    - text: "I hope you are being yourself."
+    - text: "You must be good person"
+
+  utter_telljoke:
+    - text: "Why are eggs not very much into jokes? - Because they could crack up."
+    - text: "Do you know a tree’s favorite drink? - Root beer!"
+    - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
+  
+  utter_ask_whatismyname:
+    - text: It most probably is the one that your parents have chosen for you.
+    - text: Let me guess 🤔... your First Name 🤣
+  
+  utter_ask_weather:
+    - text: I don't know about where you live, but in my world it's always sunny ☀️
+    - text: Honestly it's a bit too hot these days 😅
+    - text: Blue skies and sun shine!
+    - text: Let's just say it hasn't rained in weeks ☀️
+  
+  utter_ask_builder:
+    - text: The IT engineers at UCoE, Bhavin Vadhiya, Rishabh Mer and Ruchita Panchal 🛠.
+    - text: One of the smart engineers at UCoE! Bhavin Vadhiya, Rishabh Mer 🧠.
+
+  utter_sayabout:
+    - text: i am doing great what about you ?😀
+    - text: i am fine how can i help you.
+    - text: i am good 😊
+    - text: I'm great! Thanks for asking.
+    - text: I'm good, thanks!
+    - text: "A little bit too warm, otherwise fine."
+  
+  utter_work:
+    - text: I can help you with college related queries 🙂
+    - text: Any queries about college ? UniBot is here 😎
+    - text: I will help you with any questions about college.. 😀
+  
+  utter_bad:
+    - text: That's so rude.. 😲
+    - text: That made me sad 😥
+    - text: That’s not very nice 😢
+
+  utter_thanks:
+    - text: "Thank You"
+    - text: "Glad to here that"
+    - text: "Thanks"
+
+  utter_yes:
+    - text: "Yes"
+    - text: "Yes 👍"
+
+  utter_college_age:
+   - text: "Universal College of Engineering is 7 years old"
+   - text: "UCoE is 7 years old"
+
+  utter_college_founder:
+    - text: "Our Founder is <b>Mr. Jesus Lall</b> the Chairman of Vidya Vikas Education Trust"
+    - text: "<b>Mr. Jesus Lall</b> is the Chairman of Vidya Vikas Education Trust and Founder of UCoE"
