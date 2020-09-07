@@ -25,6 +25,15 @@ python -m spacy download en_core_web_md
 python -m spacy link en_core_web_md en
 ```
 
+### Packages used for custom Actions
+```bash
+pip install mysql
+```
+
+```bash
+pip install mysql-connector-python
+```
+
 ### For Node JS, Json Server
 1. Download and Install node.js setup and run following command in target folder  
 
