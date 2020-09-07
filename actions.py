@@ -9,25 +9,26 @@ from rasa_sdk.forms import FormAction, REQUESTED_SLOT
 
 from email_connector import sendMail
 from excelsheet import datastore
+from database_connector import DataUpdate, UserDataUpdate
 
 reg_phone = '^[6-9]{1}[0-9]{1}[0-9]{8}$'
 reg_name = '^[A-Za-z\s]{3,30}$'
 
 mailOTP = ""
 
-def generateOTP():
+# def generateOTP():
 
-    global mailOTP
+#     global mailOTP
 
-    digits = "0123456789"
-    OTP = ""
+#     digits = "0123456789"
+#     OTP = ""
 
-    for i in range(4):
-        OTP += digits[math.floor(random.random() * 10)]
+#     for i in range(4):
+#         OTP += digits[math.floor(random.random() * 10)]
 
-    mailOTP = OTP
+#     mailOTP = OTP
 
-    print("OTP generated")
+#     print("OTP generated")
 
 class ActionSaveData(Action):
 
@@ -201,7 +202,8 @@ class EmailForm(FormAction):
             """Define what the form has to do
                 after all required slots are filled"""
 
-        
+            UserDataUpdate(tracker.get_slot("name"), tracker.get_slot("phone"), tracker.get_slot("email"))
+
             dispatcher.utter_message(template="utter_submit")
             return []
 
