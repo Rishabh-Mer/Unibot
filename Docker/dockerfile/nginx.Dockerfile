@@ -4,6 +4,6 @@ RUN apk add --no-cache bash
 
 WORKDIR /app
 
-COPY ./Docker/nginx.conf /etc/nginx/nginx.conf
+COPY ./Docker/bin/nginx.conf /etc/nginx/nginx.conf
 
-CMD ["/bin/bash", "-c", "Docker/env.sh && nginx -g \"daemon off;\""]
+CMD ["/bin/bash", "-c", "Docker/env/env.sh && nginx -g \"daemon off;\""]

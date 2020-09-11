@@ -16,8 +16,8 @@ RUN apt-get install -y supervisor
 
 WORKDIR /app
 
-COPY Docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY Docker/bin/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN sed -i 's/MinProtocol = TLSv1.2/MinProtocol = TLSv1.0/' /etc/ssl/openssl.cnf
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/bin/bash", "Docker/bin/rasa_run.sh"]
