@@ -1,6 +1,6 @@
 FROM python:3.7
 
-RUN pip3 install rasa==1.10.10
+RUN pip3 install rasa==1.10.10 --no-cache-dir
 
 RUN pip3 install spacy
 
