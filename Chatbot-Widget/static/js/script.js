@@ -41,7 +41,7 @@ function action_trigger() {
 
 	// send an event to the bot, so that bot can start the conversation by greeting the user
 	$.ajax({
-		url: `http://localhost:5005/webhooks/rest/webhook`, // Rasa server Url
+		url: `http://${window.location.hostname + window._env_.rasaServerUrl}/webhooks/rest/webhook`, // Rasa server Url
 		type: "POST",
 		contentType: "application/json",
 		data: JSON.stringify({ "message": "/start", "sender": user_id }),
@@ -49,7 +49,7 @@ function action_trigger() {
 			console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
 			var rasaResp = botResponse[0].text;
 			$.ajax({
-					url: "https://d80a65083fbc.ngrok.io/data", // JSON Url
+					url: `http://${window.location.hostname + window._env_.jsonServerUrl}/data`, // JSON Url
 					type: "POST",
 					contentType: "application/json",
 					crossDomain: true,
@@ -147,7 +147,7 @@ function scrollToBottomOfResults() {
 function send(message) {
 
 	$.ajax({
-		url: "http://localhost:5005/webhooks/rest/webhook", // Rasa Server URL
+		url: `http://${window.location.hostname + window._env_.rasaServerUrl}/webhooks/rest/webhook`, // Rasa Server URL
 		type: "POST",
 		contentType: "application/json",
 		data: JSON.stringify({ "message": message, "sender": user_id }),
@@ -155,7 +155,7 @@ function send(message) {
 			console.log("Response from Rasa: ", botResponse, "\nStatus: ", status, "\nUser Message: ", message, "\nId", user_id);
 			var rasaResp = botResponse[0];
 			$.ajax({
-					url: "https://e61534ba89fb.ngrok.io/data", // JSON Url
+					url: `http://${window.location.hostname + window._env_.jsonServerUrl}/data`, // JSON Url
 					type: "POST",
 					contentType: "application/json",
 					crossDomain: true,

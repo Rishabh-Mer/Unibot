@@ -7,8 +7,8 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction, REQUESTED_SLOT
 
-from email_connector import sendMail
-from excelsheet import datastore
+# from email_connector import sendMail
+# from excelsheet import datastore
 from database_connector import DataUpdate, UserDataUpdate
 
 reg_phone = '^[6-9]{1}[0-9]{1}[0-9]{8}$'
@@ -35,16 +35,16 @@ class ActionSaveData(Action):
     def name(self) -> Text:
         return "action_save_data"
 
-    def run(self, dispatcher: CollectingDispatcher, 
+    def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        datastore(tracker.get_slot("name"),
-                  tracker.get_slot("phone"),
-                  tracker.get_slot("email"))
+#         datastore(tracker.get_slot("name"),
+#                   tracker.get_slot("phone"),
+#                   tracker.get_slot("email"))
         # dispatcher.utter_message(text="Data Stored Successfully.")
         return []
-    
+
 class UserForm(FormAction):
     """Example of a custom form action"""
 

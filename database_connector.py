@@ -1,11 +1,13 @@
 import mysql.connector
+import os
 
 def DataUpdate(name, stream, semester):
 	mydb = mysql.connector.connect(
-		host = "localhost",
-		user = "root",
-		passwd = "",
-		database = "unibot_database"
+        host = os.getenv('DATABASE_HOST'),
+        user = os.getenv('DATABASE_USER'),
+        password = os.getenv('DATABASE_PASSWORD'),
+        database = os.getenv('DATABASE'),
+        use_pure=True
 	)
 
 	mycursor = mydb.cursor()
@@ -20,10 +22,11 @@ def DataUpdate(name, stream, semester):
 
 def UserDataUpdate(name, phone, email):
 	mydb = mysql.connector.connect(
-		host = "localhost",
-		user = "root",
-		passwd = "",
-		database = "unibot_database"
+        host = os.getenv('DATABASE_HOST'),
+        user = os.getenv('DATABASE_USER'),
+        password = os.getenv('DATABASE_PASSWORD'),
+        database = os.getenv('DATABASE'),
+        use_pure=True
 	)
 
 	mycursor = mydb.cursor()

@@ -1,0 +1,41 @@
+version: '2.1'
+services:
+  db:
+    image: mysql:5.7.22
+    env_file:
+      - Docker/env/db.env
+    ports:
+      - 3306:3306
+
+  rasa:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/rasa.Dockerfile
+    env_file:
+      - Docker/env/rasa.env
+    volumes:
+      - ./:/app
+    ports:
+      - 5005:5005
+      - 5055:5055
+
+  json-server:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/json.Dockerfile
+    volumes:
+      - ./data:/app/data
+    ports:
+      - 3000:3000
+
+  nginx-server:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/nginx.Dockerfile
+    env_file:
+      - Docker/env/nginx.env
+    volumes:
+      - ./Docker:/app/Docker
+      - ./Chatbot-Widget:/usr/share/nginx/html
+    ports:
+      - 80:80
