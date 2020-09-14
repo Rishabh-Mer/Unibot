@@ -23,10 +23,6 @@ services:
       - ./:/app
     ports:
       - 5005:5005
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5005"]
-      timeout: 10s
-      retries: 10
     depends_on:
       db:
         condition: service_healthy
@@ -39,10 +35,6 @@ services:
       - ./data:/app/data
     ports:
       - 3000:3000
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000"]
-      timeout: 10s
-      retries: 10
 
   nginx-server:
     build:
@@ -57,6 +49,6 @@ services:
       - 443:443
     depends_on:
       rasa:
-        condition: service_healthy
+        condition: service_started
       json-server:
-        condition: service_healthy
+        condition: service_started
