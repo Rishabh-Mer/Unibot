@@ -445,21 +445,11 @@ responses:
       image: "https://i.imgur.com/uyahBhx.jpg"  
       
   utter_ask_details_e:
-    - text: "Before we start can i have your details like name, phone and email ?"
-      buttons:  
-      - title: "Yes"
-        payload: '/accept'
-      - title: "No" 
-        payload: '/deny'
-
+    - text: "Before we start please enter the details."
+      
   utter_ask_details_h:
-    - text: "नमस्ते 🙏, इससे पहले कि मैं मदद कर पाऊ, क्या आपकी जानकारी जैसे नाम, फोन नंबर और ईमेल मिल सकते है ?"
-      buttons:  
-      - title: "हाँ"
-        payload: '/accept'
-      - title: "नहीं"
-        payload: '/deny'
-
+    - text: "नमस्ते 🙏, इससे पहले कि मैं मदद कर पाऊ, कृपया आपकी जानकारी दीजिये|"
+      
   utter_ask_feed:
     - text: "It was a pleasure talking to you 😊. I would really appreciate it if you can rate the conversation."
       buttons:
