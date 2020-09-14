@@ -16,8 +16,6 @@ COPY ./Chatbot-Widget/ /usr/share/nginx/html/
 
 RUN chmod +x /scripts/*.sh
 
-#VOLUME /etc/letsencrypt
-
 COPY ./Docker/bin/nginx.conf /etc/nginx/nginx.conf
 
 RUN echo "22 03 * * 2,7 root /scripts/renew.sh" >/etc/cron.d/certbot-renew
