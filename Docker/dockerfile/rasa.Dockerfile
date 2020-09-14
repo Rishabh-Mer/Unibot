@@ -18,6 +18,11 @@ WORKDIR /app
 
 COPY Docker/bin/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+COPY config.yml /app/config.yml
+COPY domain.yml /app/domain.yml
+
 RUN sed -i 's/MinProtocol = TLSv1.2/MinProtocol = TLSv1.0/' /etc/ssl/openssl.cnf
+
+RUN rasa train
 
 CMD ["/bin/bash", "Docker/bin/rasa_run.sh"]

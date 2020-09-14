@@ -7,7 +7,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-    - /opt/mysql_data:/var/lib/mysql
+      - /opt/mysql_data:/var/lib/mysql
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 20s
@@ -47,9 +47,7 @@ services:
     env_file:
       - Docker/env/nginx.env
     volumes:
-      - ./Docker:/app/Docker
       - ./certibot/letsencrypt:/etc/letsencrypt
-      - ./Chatbot-Widget:/usr/share/nginx/html
     ports:
       - 80:80
       - 443:443
