@@ -816,19 +816,11 @@
 ## say goodbye + acceptfeed
 * goodbye
     - utter_goodbye
-    - utter_ask_feed
-* accept
-    - feedback_form
-    - form{"name": "feedback_form"}
-    - form{"name": null}
 
 ## say goodbye + denyfeed
 * goodbye
     - utter_goodbye
-    - utter_ask_feed
-* deny
-    - utter_no_problem_e
-
+   
 ## feed_h + acceptfeed
 * feed_h
     - utter_ask_feed_h
@@ -925,38 +917,6 @@
 * notices
     - utter_notices
     - utter_suggestions
-
-## story1_english_no
-* start
-    - utter_init_chat
-    - utter_ask_lang
-* lang_e
-    - utter_ask_details_e
-* deny
-    - utter_no_problem_e
-    - utter_greet_e
-    - utter_suggestions
-* quote_day
-    - utter_quote_day
-    - utter_suggestions
-* about_college
-    - utter_about_college
-    - utter_suggestions
-* notices
-    - utter_notices
-    - utter_ask_feed
-* deny
-    - utter_no_problem_e
-    - utter_suggestions
-* department
-    - utter_department
-* intake
-    - utter_intake
-* cutoff
-    - utter_ask_feed
-* deny
-    - utter_no_problem_e
-    - utter_cutoff
 
 ## bus + feedback
 * start
