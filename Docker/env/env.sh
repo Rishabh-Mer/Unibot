@@ -19,4 +19,4 @@ done < .env
 
 rm .env
 
-echo "}" >> /usr/share/nginx/html/env_config.js
+echo "};" >> /usr/share/nginx/html/env_config.js
