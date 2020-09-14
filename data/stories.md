@@ -10,7 +10,6 @@
 ## language_h
 * lang_h
     - utter_ask_details_h
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -22,7 +21,6 @@
 ## language_e + suggestions
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -69,21 +67,6 @@
 * accept
     - form{"name": null}
     - utter_id_application_accept
-
-## language_h + deny
-* lang_h
-    - utter_ask_details_h
-* deny
-    - utter_no_problem_h
-    - utter_greet_h
-    
-## language_e + deny
-* lang_e
-    - utter_ask_details_e
-* deny
-    - utter_no_problem_e
-    - utter_greet_e
-    - utter_suggestions
 
 ## change langauage
 * change_language
@@ -813,14 +796,10 @@
 * thankyou
     - utter_welcome
      
-## say goodbye + acceptfeed
+## say goodbye 
 * goodbye
     - utter_goodbye
-
-## say goodbye + denyfeed
-* goodbye
-    - utter_goodbye
-   
+    
 ## feed_h + acceptfeed
 * feed_h
     - utter_ask_feed_h
@@ -899,7 +878,6 @@
     - utter_ask_lang
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -924,7 +902,6 @@
     - utter_ask_lang
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -949,7 +926,6 @@
     - utter_ask_lang
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -1009,7 +985,6 @@
     - utter_ask_lang
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
@@ -1037,7 +1012,6 @@
     - utter_ask_lang
 * lang_e
     - utter_ask_details_e
-* accept
     - user_form
     - form{"name": "user_form"}
     - form{"name": null}
