@@ -1,5 +1,7 @@
 import re, math, random
+import requests
 from typing import Dict, Text, Any, List, Union, Optional
+from datetime import datetime
 
 from rasa_sdk import Action, ActionExecutionRejection
 from rasa_sdk import Tracker
@@ -13,6 +15,10 @@ from database_connector import DataUpdate, UserDataUpdate
 
 reg_phone = '^[6-9]{1}[0-9]{1}[0-9]{8}$'
 reg_name = '^[A-Za-z\s]{3,30}$'
+
+url = 'https://admission.universal.edu.in/leads/college_lead.php'
+now = datetime.now()
+dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
 
 mailOTP = ""
 
@@ -204,6 +210,32 @@ class EmailForm(FormAction):
 
             UserDataUpdate(tracker.get_slot("name"), tracker.get_slot("phone"), tracker.get_slot("email"))
 
+            user_id = tracker.sender_id
+
+            text = tracker.get_slot("name")
+            name = text.split()
+            fname = name[0]
+
+            length = len(name)
+
+            if length > 1:
+                lname = name[1]
+            else:
+                lname = "-"
+
+            dataObj = {
+                "first_name":fname,
+                "last_name":lname,
+                "email":tracker.get_slot("email"),
+                "mobile":tracker.get_slot("phone"),
+                "academic_year":"2020-2021",
+                "organization_id":"3393-3994",
+                "created_date":dt_string,
+                "unique_id":user_id
+            }
+
+            x = requests.post(url, dataObj)
+            
             dispatcher.utter_message(template="utter_submit")
             return []
 
