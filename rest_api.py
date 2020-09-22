@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import json
 from database_connector import UserMessage
 
 api = Flask(__name__)
@@ -22,11 +23,8 @@ def get_data():
         }
 
         UserMessage(data2['message'],data2['response'],data2['sender'])
-
         return temp, 201
-
-        print(temp)
 
 
 if __name__ == '__main__':
-api.run(host='0.0.0.0', port='3000')
+    api.run(host='0.0.0.0', port='3000')

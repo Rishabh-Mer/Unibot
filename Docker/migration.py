@@ -12,8 +12,8 @@ def migrate():
         'create table `user_data`( `name` varchar(40) null, `email` varchar(40) null, `phone` varchar(15) null) ENGINE=InnoDB'
     TABLES['id_card_table'] = \
         'create table `id_card_table`( `name` varchar(40) null, `stream` varchar(40) null, `semester` varchar(40) null ) ENGINE=InnoDB'
-    TABLES['User_message'] = \
-        'create table `responses`( `message` varchar(1024) null, `response` varchar(1024) null, `sender` varchar(100) null ) ENGINE=InnoDB'
+    TABLES['user_message'] = \
+        'create table `user_message`( `message` varchar(1024) null, `response` varchar(1024) null, `sender` varchar(100) null ) ENGINE=InnoDB COLLATE = utf8mb4_unicode_ci'
     TABLES['opt_mapping'] = \
         'create table `otp_mapping`( `mobile_number` varchar(40) null, `otp` varchar(40) null ) ENGINE=InnoDB'
 

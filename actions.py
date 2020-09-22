@@ -9,9 +9,8 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction, REQUESTED_SLOT
 
-# from email_connector import sendMail
-# from excelsheet import datastore
-from database_connector import DataUpdate, UserDataUpdate
+from database_connector import DataUpdate, UserDataUpdate, StoreOtp, DeleteOtp, IsOtpValid
+from sms_service import SendOtp
 
 reg_phone = '^[6-9]{1}[0-9]{1}[0-9]{8}$'
 reg_name = '^[A-Za-z\s]{3,30}$'
@@ -22,19 +21,13 @@ dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
 
 mailOTP = ""
 
-# def generateOTP():
+def generateOTP():
+    digits = "0123456789"
+    otp = ""
+    for i in range(4):
+        otp += digits[math.floor(random.random() * 10)]
 
-#     global mailOTP
-
-#     digits = "0123456789"
-#     OTP = ""
-
-#     for i in range(4):
-#         OTP += digits[math.floor(random.random() * 10)]
-
-#     mailOTP = OTP
-
-#     print("OTP generated")
+    return otp
 
 class ActionSaveData(Action):
 
@@ -45,10 +38,6 @@ class ActionSaveData(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-#         datastore(tracker.get_slot("name"),
-#                   tracker.get_slot("phone"),
-#                   tracker.get_slot("email"))
-        # dispatcher.utter_message(text="Data Stored Successfully.")
         return []
 
 class UserForm(FormAction):
@@ -64,8 +53,7 @@ class UserForm(FormAction):
     def required_slots(tracker: Tracker) -> List[Text]:
         """A list of required slots that the form has to fill"""
 
-        return ["name", "phone"]   
-        
+        return ["name", "phone", "otp"]
 
     def slot_mappings(self):
         # type: () -> Dict[Text: Union[Dict, List[Dict]]]
@@ -75,9 +63,12 @@ class UserForm(FormAction):
             - a whole message
             or a list of them, where a first match will be picked"""
 
-        return {"name": self.from_text(intent=None),
-                "phone": self.from_text(intent=None)}
-                
+        return {
+            "name": self.from_text(intent=None),
+            "phone": self.from_text(intent=None),
+            "otp": self.from_text(intent=None)
+        }
+
     @staticmethod
     def is_int(string: Text) -> bool:
         """Check if a string is an integer"""
@@ -108,15 +99,35 @@ class UserForm(FormAction):
                         tracker: Tracker,
                         domain: Dict[Text, Any]) -> Optional[Text]:
         """Validate phone value."""
-        
+
         if (re.search(reg_phone, value)):
             if self.is_int(value):
+                otp = generateOTP()
+                StoreOtp(value, otp)
+                SendOtp(value, otp)
                 return {"phone": value}
         else:
             dispatcher.utter_template('utter_wrong_phone', tracker)
             # validation failed, set slot to None
             return {"phone": None}
 
+
+    def validate_otp( self,
+                    value: Text,
+                    dispatcher: CollectingDispatcher,
+                    tracker: Tracker,
+                    domain: Dict[Text, Any]) -> Optional[Text]:
+        """Validate email otp value."""
+
+        reg_otp = '^[0-9]{4}$'
+
+        phoneNumber = tracker.get_slot('phone')
+        if (re.match(reg_otp, value) and IsOtpValid(phoneNumber, value)):
+            DeleteOtp(phoneNumber)
+            return {"otp": value}
+        else:
+            dispatcher.utter_message(template="utter_wrong_otp")
+            return {"otp": None}
 
     def submit(self,
                dispatcher: CollectingDispatcher,
@@ -131,7 +142,7 @@ class UserForm(FormAction):
 
 
 class EmailForm(FormAction):
-    
+
         """Example of a custom form actions"""
 
         def name(self):
@@ -158,7 +169,7 @@ class EmailForm(FormAction):
                 "email": self.from_text(intent=None),
                 # "otp": self.from_text()
                 }
-        
+
         @staticmethod
         def is_int(string: Text) -> bool:
             """Check if a string is an integer"""
@@ -174,7 +185,7 @@ class EmailForm(FormAction):
                             tracker: Tracker,
                             domain: Dict[Text, Any]) -> Optional[Text]:
             """Validate email value."""
-            
+
             reg_email = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
 
             if (re.search(reg_email, value)):
@@ -200,7 +211,7 @@ class EmailForm(FormAction):
         #     else:
         #         dispatcher.utter_message(template="utter_wrong_otp")
         #         return {"otp": None}
-    
+
         def submit(self,
                 dispatcher: CollectingDispatcher,
                 tracker: Tracker,
@@ -235,7 +246,7 @@ class EmailForm(FormAction):
             }
 
             x = requests.post(url, dataObj)
-            
+
             dispatcher.utter_message(template="utter_submit")
             return []
 
@@ -294,7 +305,7 @@ class FeedbackForm(FormAction):
             dispatcher.utter_message(template="utter_wrong_feedback")
 
             return {"feedback": None}
-    
+
     def submit(
         self,
         dispatcher: CollectingDispatcher,

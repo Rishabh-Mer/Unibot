@@ -1,8 +1,8 @@
 import mysql.connector
 import os
 
-def DataUpdate(name, stream, semester):
-	mydb = mysql.connector.connect(
+def getDb():
+	return mysql.connector.connect(
         host = os.getenv('DATABASE_HOST'),
         user = os.getenv('DATABASE_USER'),
         password = os.getenv('DATABASE_PASSWORD'),
@@ -10,56 +10,44 @@ def DataUpdate(name, stream, semester):
         use_pure=True
 	)
 
-	mycursor = mydb.cursor()
+def executeQuery(query):
+    myDb = getDb()
+    mycursor = myDb.cursor()
+    mycursor.execute(query)
+    myDb.commit()
 
-	sql_query2 = 'INSERT INTO id_card_table ( name, stream, semester) VALUES ("{0}","{1}","{2}");'.format(name, stream, semester)
 
-	mycursor.execute(sql_query2)
+def DataUpdate(name, stream, semester):
+	query = 'INSERT INTO id_card_table ( name, stream, semester) VALUES ("{0}","{1}","{2}");'.format(name, stream, semester)
+	executeQuery(query)
 
-	mydb.commit()
-
-	print(mycursor.rowcount, "id record inserted")
 
 def UserDataUpdate(name, phone, email):
-	mydb = mysql.connector.connect(
-        host = os.getenv('DATABASE_HOST'),
-        user = os.getenv('DATABASE_USER'),
-        password = os.getenv('DATABASE_PASSWORD'),
-        database = os.getenv('DATABASE'),
-        use_pure=True
-	)
+	query = 'INSERT INTO user_data (name, phone, email) VALUES ("{0}","{1}","{2}");'.format(name, phone, email)
+	executeQuery(query)
 
-	mycursor = mydb.cursor()
-
-	sql_query1 = 'INSERT INTO user_data (name, phone, email) VALUES ("{0}","{1}","{2}");'.format(name, phone, email)
-
-	mycursor.execute(sql_query1)
-
-	mydb.commit()
-
-	print(mycursor.rowcount, "user record inserted")
 
 def UserMessage(message,response,sender):
-	mydb = mysql.connector.connect(
-        host = os.getenv('DATABASE_HOST'),
-        user = os.getenv('DATABASE_USER'),
-        password = os.getenv('DATABASE_PASSWORD'),
-        database = os.getenv('DATABASE'),
-        use_pure=True
-	)
+	query = 'INSERT INTO user_message (message, response, sender) VALUES ("{0}","{1}","{2}");'.format(message, response, sender)
+	executeQuery(query)
 
-	mycursor = mydb.cursor()
 
-	# table = "CREATE TABLE User_message (message VARCHAR(255), response VARCHAR(255), sender FLOAT(30));"
+def StoreOtp(mobileNumber, otp):
+	query = 'INSERT INTO otp_mapping (mobile_number, otp) VALUES ("{0}","{1}");'.format(mobileNumber, otp)
+	executeQuery(query)
 
-	sql_query3 = 'INSERT INTO User_message (message, response, sender) VALUES ("{0}","{1}","{2}");'.format(message, response, sender)
 
-	mycursor.execute(sql_query3)
+def IsOtpValid(mobileNumber, otp):
+	query = 'SELECT * from otp_mapping where mobile_number = "{0}" AND otp = "{1}" limit 1'.format(mobileNumber, otp)
+	myDb = getDb()
+	mycursor = myDb.cursor(buffered=True)
+	mycursor.execute(query)
+	return len(mycursor.fetchall()) == 1
 
-	mydb.commit()
 
-	print(mycursor.rowcount, "user message recorded")
-
+def DeleteOtp(mobileNumber):
+	query = 'DELETE from otp_mapping where mobile_number = "{0}"'.format(mobileNumber)
+	executeQuery(query)
 
 if __name__=="__main__":
 	DataUpdate("bhavin", "Information Technology", "B.E")

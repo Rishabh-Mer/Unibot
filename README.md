@@ -96,9 +96,9 @@ rasa run actions
 {
       "message": "",
       "response": "",
-      "sender": ,
+      "sender": "",
       "id": 1
-},
+}
 ```
 
 2. To run json server

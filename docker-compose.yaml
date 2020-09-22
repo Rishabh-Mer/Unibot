@@ -27,7 +27,7 @@ services:
       db:
         condition: service_healthy
 
-  json-server:
+  api-server:
     build:
       context: .
       dockerfile: Docker/dockerfile/json.Dockerfile
@@ -52,5 +52,5 @@ services:
     depends_on:
       rasa:
         condition: service_started
-      json-server:
+      api-server:
         condition: service_started
