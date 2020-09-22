@@ -12,7 +12,7 @@ $(document).ready(function () {
 	$("#userInput").prop('disabled', true);
 	//global variables
 	action_name = "action_greet_user";
-	user_id = Math.random();
+	user_id = Math.floor((Math.random()*1000)+1);
 
 	action_trigger();
 	
