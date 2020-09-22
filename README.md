@@ -41,23 +41,26 @@ pip install mysql-connector-python
 
 1. Database Connection
 
-      def function():
-	mydb = mysql.connector.connect(
+	```bash
+	def function():
+		mydb = mysql.connector.connect(
 		host = "localhost",
 		user = "root",
 		passwd = "",
 		database = "database_name"
 	)
-
+	```
 2. Creating table
-
+	
+	```bash
 	table = "CREATE TABLE table_name (message VARCHAR(255), response VARCHAR(255), sender FLOAT(30));"
-
+	```
 
 3. Insert data
 
+	```bash
 	sql = 'INSERT INTO table_name (message, response, sender) VALUES ("{0}","{1}","{2}");'.format(message, response, sender)
-
+	```
 
 ### For Node JS, Json Server
 1. Download and Install node.js setup and run following command in target folder  
