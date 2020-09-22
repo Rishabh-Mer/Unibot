@@ -7,7 +7,7 @@ $(document).ready(function () {
 	//initiate the modal for displaying the charts, if you dont have charts, then you comment the below line
 	$('.modal').modal();
 
-	//enable this if u have configured the bot to start the conversation. 
+	//enable this if u have configured the bot to start the conversation.
 	showBotTyping();
 	$("#userInput").prop('disabled', true);
 	//global variables
@@ -15,7 +15,7 @@ $(document).ready(function () {
 	user_id = Math.floor((Math.random()*1000)+1);
 
 	action_trigger();
-	
+
 	$("#userInput").hover(function(){
        $(this).focus();
     });
@@ -41,7 +41,7 @@ function action_trigger() {
 
 	// send an event to the bot, so that bot can start the conversation by greeting the user
 	$.ajax({
-		url: `${window._env_.rasaServerUrl}/webhooks/rest/webhook`, // Rasa server Url
+		url: window._env_.rasaServerUrl, // Rasa server Url
 		type: "POST",
 		contentType: "application/json",
 		data: JSON.stringify({ "message": "/start", "sender": user_id }),
@@ -49,7 +49,7 @@ function action_trigger() {
 			console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
 			var rasaResp = botResponse[0].text;
 			$.ajax({
-					url: `${window._env_.jsonServerUrl}/data`, // JSON Url
+					url: window._env_.jsonServerUrl, // JSON Url
 					type: "POST",
 					contentType: "application/json",
 					crossDomain: true,
@@ -147,7 +147,7 @@ function scrollToBottomOfResults() {
 function send(message) {
 
 	$.ajax({
-		url: `${window._env_.rasaServerUrl}/webhooks/rest/webhook`, // Rasa Server URL
+		url: window._env_.rasaServerUrl, // Rasa Server URL
 		type: "POST",
 		contentType: "application/json",
 		data: JSON.stringify({ "message": message, "sender": user_id }),
@@ -155,7 +155,7 @@ function send(message) {
 			console.log("Response from Rasa: ", botResponse, "\nStatus: ", status, "\nUser Message: ", message, "\nId", user_id);
 			var rasaResp = botResponse[0];
 			$.ajax({
-					url: `${window._env_.jsonServerUrl}/data`, // JSON Url
+					url: window._env_.jsonServerUrl, // JSON Url
 					type: "POST",
 					contentType: "application/json",
 					crossDomain: true,
@@ -220,18 +220,18 @@ function setBotResponse(response) {
 				}
 
 				//check if the response contains "images"
-				if (response[i].hasOwnProperty("image")) { 
+				if (response[i].hasOwnProperty("image")) {
 					    var BotResponse = '<div class="singleCard">' + '<a href="' + response[i].image + '" target="_blank">' + '<img class="imgcard" src="' + response[i].image + '">' + '"</a>' + '</div><div class="clearfix">';
 					$(BotResponse).appendTo(".chats").hide().fadeIn(1000);
 				}
 
 
-				//check if the response contains "buttons" 
+				//check if the response contains "buttons"
 				if (response[i].hasOwnProperty("buttons")) {
 					addSuggestion(response[i].buttons);
 				}
 
-				//check if the response contains "custom" message  
+				//check if the response contains "custom" message
 				if (response[i].hasOwnProperty("custom")) {
 
 					//check if the custom payload type is "quickReplies"
@@ -262,7 +262,7 @@ function setBotResponse(response) {
 						// sample format of the charts data:
 						// var chartData = { "title": "Leaves", "labels": ["Sick Leave", "Casual Leave", "Earned Leave", "Flexi Leave"], "backgroundColor": ["#36a2eb", "#ffcd56", "#ff6384", "#009688", "#c45850"], "chartsData": [5, 10, 22, 3], "chartType": "pie", "displayLegend": "true" }
 
-						//store the below parameters as global variable, 
+						//store the below parameters as global variable,
 						// so that it can be used while displaying the charts in modal.
 						chartData = (response[i].custom.data)
 						title = chartData.title;
@@ -473,7 +473,7 @@ function getUserPosition(position) {
 	response = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
 	console.log("location: ", response);
 
-	//here you add the intent which you want to trigger 
+	//here you add the intent which you want to trigger
 	response = '/inform{"latitude":' + position.coords.latitude + ',"longitude":' + position.coords.longitude + '}';
 	$("#userInput").prop('disabled', false);
 	send(response);

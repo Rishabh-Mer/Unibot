@@ -31,6 +31,8 @@ services:
     build:
       context: .
       dockerfile: Docker/dockerfile/json.Dockerfile
+    env_file:
+      - Docker/env/api.env
     volumes:
       - ./data:/app/data
     ports:

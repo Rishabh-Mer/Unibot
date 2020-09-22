@@ -41,10 +41,11 @@ def UserDataUpdate(name, phone, email):
 
 def UserMessage(message,response,sender):
 	mydb = mysql.connector.connect(
-		host = "localhost",
-		user = "root",
-		passwd = "",
-		database = "unibot_database"
+        host = os.getenv('DATABASE_HOST'),
+        user = os.getenv('DATABASE_USER'),
+        password = os.getenv('DATABASE_PASSWORD'),
+        database = os.getenv('DATABASE'),
+        use_pure=True
 	)
 
 	mycursor = mydb.cursor()
