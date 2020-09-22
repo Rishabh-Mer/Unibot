@@ -477,9 +477,9 @@ responses:
 
   utter_ask_feedback:
     - text: "Can you please rate the above conversation from <b>0-5</b> <br> कृपया अपना मूल्यांकन <b>0-५</b> के बीच में दीजिये|"
-  
+
   utter_ask_otp:
-    - text: "Please Enter OTP received in your Email <br> कृपया अपने मेल पे आया हुआ OTP यहाँ पर डालिये|"
+    - text: "Please Enter OTP received in your Message <br> कृपया अपने संदेश पे आया हुआ OTP यहाँ पर डालिये|"
 
   utter_ask_stream:
     - text: "Please Choose Your stream :"
