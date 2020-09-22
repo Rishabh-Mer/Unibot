@@ -204,7 +204,7 @@ body {
 	color: white;
 	float: left;
 	margin-top: 3%;
-	margin-left: 40%;
+	margin-left: 35%;
 }
 
 .chats {
@@ -272,6 +272,7 @@ textarea-webkit-scrollbar {
 }
 
 .userMsg {
+	text-align: justify;
 	animation: animateElement linear 0.2s;
 	animation-iteration-count: 1;
 	margin-top: 5px;
@@ -534,7 +535,9 @@ div.content_data::-webkit-scrollbar {
 /* css for image card */
 
 .imgcard {
+	object-fit: cover;
 	width: 80%;
+	height: 90%;
 	border-radius: 10px 10px 10px 10px;
 	margin-left: 1%;
 }

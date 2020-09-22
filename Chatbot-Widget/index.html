@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
    <head>
+      <meta charset="UTF-8">
       <title>Unibot</title>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +11,14 @@
       <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
 
       <!--Import Font Awesome Icon Font-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-         integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />  
 
       <!--Import materialize.css-->
       <link rel="stylesheet" type="text/css" href="static/css/materialize.min.css">
 
       <!--Main css-->
       <link rel="stylesheet" type="text/css" href="static/css/style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-            
+      <meta name="viewport" content="width=device-width, initial-scale=1">       
    </head>
    <body>
       <div class="container">
@@ -63,6 +63,10 @@
                <textarea id="userInput" placeholder="Type a message..." class="usrInput"></textarea>
                <div id="sendButton"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
             </div>
+            <!-- footer -->
+            <div class="developers">
+               <div id="text"><p>Developed by Bhavin and Rishabh</p></div>
+            </div>
          </div>
 
          <!--bot profile-->
@@ -84,29 +88,14 @@
       <!--Chart.js Script -->
       <script type="text/javascript" src="static/js/chart.min.js"></script>
 
-      <!-- Firebase -->
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
-
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-      <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
-
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169309161-1"></script>
       <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyA_iwR5bc6Gc5NyS5Lj1T2nj22eeJ0G3bo",
-          authDomain: "unibot69.firebaseapp.com",
-          databaseURL: "https://unibot69.firebaseio.com",
-          projectId: "unibot69",
-          storageBucket: "unibot69.appspot.com",
-          messagingSenderId: "26514796191",
-          appId: "1:26514796191:web:c487d3070d8658f4a07caa",
-          measurementId: "G-EDR3PL2N49"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-169309161-1');
       </script>
 
    </body>

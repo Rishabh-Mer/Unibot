@@ -39,5 +39,26 @@ def UserDataUpdate(name, phone, email):
 
 	print(mycursor.rowcount, "user record inserted")
 
+def UserMessage(message,response,sender):
+	mydb = mysql.connector.connect(
+		host = "localhost",
+		user = "root",
+		passwd = "",
+		database = "unibot_database"
+	)
+
+	mycursor = mydb.cursor()
+
+	# table = "CREATE TABLE User_message (message VARCHAR(255), response VARCHAR(255), sender FLOAT(30));"
+
+	sql_query3 = 'INSERT INTO User_message (message, response, sender) VALUES ("{0}","{1}","{2}");'.format(message, response, sender)
+
+	mycursor.execute(sql_query3)
+
+	mydb.commit()
+
+	print(mycursor.rowcount, "user message recorded")
+
+
 if __name__=="__main__":
 	DataUpdate("bhavin", "Information Technology", "B.E")
