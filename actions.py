@@ -104,7 +104,8 @@ class UserForm(FormAction):
             if self.is_int(value):
                 otp = generateOTP()
                 StoreOtp(value, otp)
-                dispatcher.utter_message(text='OTP is sent on {0}{1}'.format(value[:6], '****'))
+                message = 'OTP is sent on {0}{1} <br> मोबाइल नंबर {2}{3} पर ओटीपी भेजा गया है'.format(value[:6], '****', value[:6], '****')
+                dispatcher.utter_message(text=message)
                 SendOtp(value, otp)
                 return {"phone": value}
         else:
