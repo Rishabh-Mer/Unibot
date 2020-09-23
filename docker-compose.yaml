@@ -34,7 +34,7 @@ services:
     env_file:
       - Docker/env/api.env
     volumes:
-      - ./data:/app/data
+      - ./:/app
     ports:
       - 3000:3000
 

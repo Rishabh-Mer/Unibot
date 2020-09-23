@@ -31,8 +31,6 @@ def UserMessage(message,response,sender):
 	query = """INSERT INTO user_message (message, response, sender) VALUES (%s,%s,%s);"""
 	executeQuery(query, (message, response, sender))
 
-UserMessage('shanu', '''resp'sonse''', 'send')
-
 def StoreOtp(mobileNumber, otp):
 	query = """INSERT INTO otp_mapping (mobile_number, otp) VALUES (%s,%s);"""
 	executeQuery(query, (mobileNumber, otp))
@@ -48,7 +46,7 @@ def IsOtpValid(mobileNumber, otp):
 
 def DeleteOtp(mobileNumber):
 	query = """DELETE from otp_mapping where mobile_number = %s"""
-	executeQuery(query, (mobileNumber))
+	executeQuery(query, (mobileNumber,))
 
 if __name__=="__main__":
 	DataUpdate("bhavin", "Information Technology", "B.E")

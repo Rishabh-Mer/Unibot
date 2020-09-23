@@ -12,10 +12,6 @@ EXPOSE 3000
 
 WORKDIR /app
 
-COPY ./rest_api.py /app
-
-COPY ./database_connector.py /app
-
 RUN sed -i 's/MinProtocol = TLSv1.2/MinProtocol = TLSv1.0/' /etc/ssl/openssl.cnf
 
 CMD ["python", "rest_api.py"]
