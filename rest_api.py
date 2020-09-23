@@ -22,7 +22,7 @@ def get_data():
             "sender":  data2['sender']
         }
 
-        UserMessage(data2['message'],data2['response'],data2['sender'])
+        UserMessage(data2['message'], data2['response'], data2['sender'])
         return temp, 201
 
 
