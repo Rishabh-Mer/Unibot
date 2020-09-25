@@ -156,16 +156,19 @@ actions:
 - utter_yes
 - utter_college_founder
 - utter_college_age
+- utter_ASH
 - utter_IT
 - utter_COMPS
 - utter_CIVIL
 - utter_AIML
 - utter_DATA
+- utter_ash_faculties
 - utter_it_faculties
 - utter_comps_faculties
 - utter_civil_faculties
 - utter_aiml_faculties
 - utter_data_faculties
+- utter_ash_syllabus
 - utter_it_syllabus
 - utter_comps_syllabus
 - utter_civil_syllabus
@@ -355,16 +358,19 @@ intents:
 - ok
 - how_old_college
 - founder
+- ASH
 - IT
 - COMPS
 - CIVIL
 - AIML
 - DATA
+- ash_faculties
 - it_faculties
 - comps_faculties
 - civil_faculties
 - aiml_faculties
 - data_faculties
+- ash_syllabus
 - it_syllabus
 - comps_syllabus
 - civil_syllabus
@@ -407,6 +413,7 @@ entities:
   - CIVIL
   - AIML
   - DATA
+  - Applied_Science
 
   
 slots:
@@ -445,7 +452,7 @@ responses:
       image: "https://i.imgur.com/uyahBhx.jpg"  
       
   utter_ask_details_e:
-    - text: "Before we start please enter the details."
+    - text: "Before we start please enter your details."
       
   utter_ask_details_h:
     - text: "नमस्ते 🙏, इससे पहले कि मैं मदद कर पाऊ, कृपया आपकी जानकारी दीजिये|"
@@ -476,10 +483,10 @@ responses:
     - text: "Please Enter Your Email 📧 <br> कृपया आपका ईमेल आईडी लिखे|"
 
   utter_ask_feedback:
-    - text: "Can you please rate the above conversation from <b>0-5</b> <br> कृपया अपना मूल्यांकन <b>0-५</b> के बीच में दीजिये|"
+    - text: "It was a pleasure talking to you 😊. I would really appreciate it if you can rate our conversation from <b>0-5</b> <br><br> आपसे बात करके ख़ुशी हुई 😊|  क्या आप हमारी बातचीत का मूल्यांकन <b>0-५</b> के बीच में दे सक्ते है |"
   
   utter_ask_otp:
-    - text: "Please Enter OTP received in your Email <br> कृपया अपने मेल पे आया हुआ OTP यहाँ पर डालिये|"
+    - text: "Please Enter OTP received in your Mobile Phone <br> कृपया अपने मोबाइल फ़ोन पे आया हुआ OTP यहाँ पर डालिये|"
 
   utter_ask_stream:
     - text: "Please Choose Your stream :"
@@ -521,20 +528,19 @@ responses:
     - text: "Please enter valid name, numbers are not allowed. <br><br> कृपया करके अपने नाम की सही जानकारी दे |"
 
   utter_wrong_phone:
-    - text: "Sorry Your Number is Invalid please type valid number. <br><br> कृपया करके अपने फ़ोन नंबर की सही जानकारी दे |"
     - text: "Invalid Number, Phone number should be a 10 digit number, without any prefix (+91), please try again!. <br><br> कृपया करके अपने फ़ोन नंबर की सही जानकारी दे |"
 
   utter_wrong_email:
     - text: "Sorry Your Email is invalid please enter correct email. <br><br> कृपया करके अपने ईमेल आईडी की सही जानकारी दे |"
 
   utter_wrong_otp:
-    - text: "Invalid OTP, Please enter valid. <br> यह OTP गलत है कृपया सही OTP डाले |"
+    - text: "Invalid OTP, Please enter correct OTP sent on your mobile phone.<br> यह OTP गलत है कृपया सही OTP डाले |"
 
   utter_wrong_feedback:
     - text: "Invalid,Only give rating from <b>0-5</b>. <br><br> कृपया करके मूल्यांकन <b>0-५</b> में दे |"
 
   utter_default:
-    - text: "sorry, I didn't understand 😅, can you please repharse your sentance."
+    - text: "sorry, I didn't understand 😅, can you please rephrase your sentence."
 
   utter_no_problem_e:
     - text: "No Problem!"
@@ -582,20 +588,20 @@ responses:
   utter_suggestions:
     - text: "This are some suggestion you can lookup on 💡!!"
       buttons:
-      - title: "Quote of the Day"
-        payload: '/quote_day'
+      - title: "Admission-Procedure"
+        payload: '/admission_schedule'
+      - title: "Prospectus 2020-21"
+        payload: '/brochure'
       - title: "About Us"
         payload: '/about_college'
       - title: "Naac"
         payload: '/naac_grade'
-      - title: "Notices"
-        payload: '/notices'
-      - title: "Prospectus 2020-21"
-        payload: '/brochure'
-      - title: "Admission-Procedure"
-        payload: '/admission_schedule'
       - title: "Anti-Ragging"
         payload: '/anti_ragging'
+      - title: "Notices"
+        payload: '/notices'
+      - title: "Quote of the Day"
+        payload: '/quote_day'
       
 
   utter_greet_h:
@@ -670,9 +676,11 @@ responses:
     - text: "You can apply for bus id card in Admin Office by submitting a copy of your Bus Fees Reciept"
 
   utter_department:
-    - text: "<b>Departments available college are:</b><br> <b> Duration of Program: 4 Years </b><br>1. INFORMATION TECHNOLOGY<br> 2. COMPUTER ENGINEERING<br> 3. CIVIL ENGINEERING<br> 4. DATA ENGINEERING<br> 5. ARITIFICIAL INTELLIGENCE AND MACHINE LEARNING<br><br> <b>Vocational Undergraduate Course :</b><br><b>Duration of Program: 3 Years </b> <br>1. ARITIFICIAL INTELLIGENCE & ROBOTICS <br> 
+    - text: "<b>Departments available college are:</b><br> <b> Duration of Program: 4 Years </b><br>1. APPLIED SCIENCE & HUMANITIES<br> 2. INFORMATION TECHNOLOGY<br> 3. COMPUTER ENGINEERING<br> 4. CIVIL ENGINEERING<br> 5. DATA ENGINEERING<br> 6. ARITIFICIAL INTELLIGENCE AND MACHINE LEARNING<br><br> <b>Vocational Undergraduate Course :</b><br><b>Duration of Program: 3 Years </b> <br>1. ARITIFICIAL INTELLIGENCE & ROBOTICS <br> 
     2. CLOUD COMPUTING <br> 3. DATA ANALYTICS <br> 4. INFORMATION MANAGEMENT & CYBER SECURITY"
       buttons: 
+      - title: "Applied Science and Humanities"
+        payload: '/ASH'
       - title: "Information Technology"
         payload: '/IT'
       - title: "Computer Engineering"
@@ -683,6 +691,15 @@ responses:
         payload: '/AIML'
       - title: "Data Engineering"
         payload: '/DATA'
+
+  utter_ASH:
+    - text: "At the forefront of the other disciplines of engineering studies, <b>Applied Science and Humanities Department</b> with a dedicated team of highly qualified and experienced professionals is committed to serve the needs of various branches of Engineering by providing a favourable environment which motivates students to utilise their fullest possible potential for self-development in various aspects of life.The Department promotes the applied nature of Sciences and Humanities to develop a sustainable foundation as part of the Engineering Education.
+            <br>The department prepares students for core engineering branches by educating them in the basic sciences of <b>physics</b>, <b>chemistry</b>, <b>mathematics</b>, <b>Engineering Mechanics</b> and <b>Engineering Drawing</b> in the <b>first year</b>.<br> Environmental studies make our students stewards of the environment that sustains us, our families and communities now and in the future. The <b>English Communication skills</b>, which are an integral part of the syllabus, strive to produce graduates of international repute with <b>effective communication skills</b>, <b>soft skills</b> and <b>interpersonal skills</b> and promote a commendable transformation when they are ready to face the placements."
+      buttons:
+        - title: "List of Applied Science & Humanities Faculties"
+          payload: '/ash_faculties'
+        - title: "Applied Science & Humanities Syllabus"
+          payload: '/ash_syllabus'
 
   utter_IT:
     - text: "The department of Information and Technology aspire to establish a system of Quality Assurance on continuous basis, evaluate and monitor teaching-learning process. Universal college has excellent connections with IT Companies based in Mumbai, Bangalore, Hyderabad and Gurgaon.
@@ -740,6 +757,12 @@ responses:
         - title: "DATA Engineering Syllabus"
           payload: '/data_syllabus'
 
+  utter_ash_faculties:
+    - text: ''
+      buttons:
+      - title: "Applied Science and Humanties Syllabus"
+        payload: '/ash_syllabus'
+
   utter_it_faculties:
     - text: " <b><u>IT-FACULTIES:</u></b><br>
              - <b>Prof. Yogita Mane, Head of the Department</b>.<br>
@@ -779,6 +802,12 @@ responses:
       buttons:
       - title: "DATA Engineering Syallbus"
         payload: '/data_syllabus'
+
+  utter_ash_syllabus:
+    - text: ''
+      buttons:
+      - title: "Faculties of Applied Science & Humanities"
+        payload: '/ash_faculties'
   
   utter_it_syllabus:
     - text: 'Download Syllabus for Information Technology Course from SE to BE by <a href="https://muquestionpapers.com/download/syllabus/IT/SE%20to%20BE-IT_CBCGS_Syllabus.pdf" target="_blank">Clicking here</a>'
@@ -821,8 +850,8 @@ responses:
         payload: '/it_syllabus'
 
   utter_department_h:
-    - text: "<b>कॉलेज में यह कोर्स उपलब्ध है :</b><br>1.इनफार्मेशन टेक्नोलॉजी(IT)<br> 2.कंप्यूटर इंजीनियरिंग(COMPS)<br> 3.सिविल इंजीनियरिंग(CIVIL)<br> 4.डाटा इंजीनियरिंग(DATA)<br>5.आर्टिफीसियल इंटेलिजेंस और मशीन लर्निंग(AI&ML)<br><br>
-      <b>व्यावसायिक कोर्स (३ साल का होगा):</b><br>1.आर्टिफीसियल इंटेलिजेंस और रोबोटिक्स <br>2.क्लाउड  कंप्यूटिंग <br>3.डाटा एनालिटिक्स <br>4.इनफार्मेशन मैनेजमेंट और साइबर  सिक्योरिटी "
+    - text: "<b>कॉलेज में यह कोर्स उपलब्ध है :</b><br>१.एप्लाइड साइंस और हुमानिटीज़<br> २.इनफार्मेशन टेक्नोलॉजी(IT)<br> ३.कंप्यूटर इंजीनियरिंग(COMPS)<br> ४.सिविल इंजीनियरिंग(CIVIL)<br> ५.डाटा इंजीनियरिंग(DATA)<br> ६.आर्टिफीसियल इंटेलिजेंस और मशीन लर्निंग(AI&ML)<br><br>
+      <b>व्यावसायिक कोर्स (३ साल का होगा):</b><br>१.आर्टिफीसियल इंटेलिजेंस और रोबोटिक्स <br>२.क्लाउड  कंप्यूटिंग <br>३.डाटा एनालिटिक्स <br> ४.इनफार्मेशन मैनेजमेंट और साइबर  सिक्योरिटी "
       buttons:
       - title : "🔙"
         payload: '/back'
