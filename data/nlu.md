@@ -82,6 +82,19 @@
 - courses offered in college
 - courses in college
 
+## intent:ASH
+- - what is under course [Applied Science and Humanities](Applied_Science)
+- [Applied Science & Humanities](Applied_Science) department
+- [Applied Science](Applied_Science) Department
+- Subjects in Applied Science and Humanities Course
+- [Applied Science and Humanities](Applied_Science)
+- [ASH]{"entity":"Applied_Science", "value":"ASH"}
+
+## synonym:Applied_Science
+- ASH
+- ash
+- applied science
+
 ## intent:IT
 - what is under course [information technology](IT)
 - [information technology](IT) department
@@ -169,6 +182,12 @@
 - Data Engineering
 - DATA Engineering
 
+## intent:ash_faculties
+- faculties of Applied Science and Humanities department
+- Applied Science and Humanities faculty
+- faculty of Applied Science and Humanities
+- applied science and humanities faculty
+
 ## intent:it_faculties
 - faculties of IT department
 - information technology faculty
@@ -208,6 +227,12 @@
 - faculty of Data Engineering
 - DATA faculty
 - data engineering faculties
+
+## intent:ash_syllabus
+- syllabus for Applied Science and Humanities department
+- Applied Science and Humanities department syllabus
+- Applied Science and Humanities syllabus
+- syllabus for Applied Science and Humanities
 
 ## intent:it_syllabus
 - syllabus for it department

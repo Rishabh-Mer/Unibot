@@ -318,5 +318,5 @@ class FeedbackForm(FormAction):
             after all required slots are filled"""
 
         # utter submit template
-        # dispatcher.utter_message(template="utter_submit")
+        dispatcher.utter_message("Thank You, for the Feedback 😃")
         return []
