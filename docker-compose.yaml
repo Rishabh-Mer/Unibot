@@ -1,0 +1,56 @@
+version: '2.1'
+services:
+  db:
+    image: mysql:5.7.22
+    env_file:
+      - Docker/env/db.env
+    ports:
+      - 3306:3306
+    volumes:
+      - /opt/mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  rasa:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/rasa.Dockerfile
+    env_file:
+      - Docker/env/rasa.env
+    volumes:
+      - ./:/app
+    ports:
+      - 5005:5005
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api-server:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/json.Dockerfile
+    env_file:
+      - Docker/env/api.env
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
+
+  nginx-server:
+    build:
+      context: .
+      dockerfile: Docker/dockerfile/nginx.Dockerfile
+    env_file:
+      - Docker/env/nginx.env
+    volumes:
+      - ./certibot/letsencrypt:/etc/letsencrypt
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      rasa:
+        condition: service_started
+      api-server:
+        condition: service_started

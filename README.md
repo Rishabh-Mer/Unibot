@@ -96,12 +96,21 @@ rasa run actions
 {
       "message": "",
       "response": "",
-      "sender": ,
+      "sender": "",
       "id": 1
-},
+}
 ```
 
 2. To run json server
 ```bash
 json-server --watch data/filename.json
+```
+###To train the model in VM
+```docker exec -it unibot_rasa_1 rasa train```
+
+###To update the deployment
+```bash 
+cd /root/Unibot
+docker-compose build
+docker-compose down && docker-compose up
 ```
