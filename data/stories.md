@@ -799,6 +799,9 @@
 ## say goodbye 
 * goodbye
     - utter_goodbye
+    - feedback_form
+    - form{"name": "feedback_form"}
+    - form{"name": null}
     
 ## feed_h + acceptfeed
 * feed_h
@@ -896,32 +899,6 @@
     - utter_notices
     - utter_suggestions
 
-## bus + feedback
-* start
-    - utter_init_chat
-    - utter_ask_lang
-* lang_e
-    - utter_ask_details_e
-    - user_form
-    - form{"name": "user_form"}
-    - form{"name": null}
-    - email_form
-    - form{"name": "email_form"}
-    - form{"name": null}
-    - utter_greet_e
-    - utter_suggestions
-* bus_service
-    - utter_bus_service
-* bus_fees
-    - utter_bus_fees
-* transport_way
-    - utter_transport_way
-* nearest_station
-    - utter_nearest_station
-    - feedback_form
-    - form{"name": "feedback_form"}
-    - form{"name": null}
-
 ## admission + sugg + feed
 * admission_schedule
     - utter_admission_schedule
@@ -931,9 +908,6 @@
     - utter_admission_documents
 * last_date_admission
     - utter_last_date_admission
-    - feedback_form
-    - form{"name": "feedback_form"}
-    - form{"name": null}
     - utter_suggestions
 
 
