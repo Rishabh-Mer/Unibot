@@ -295,7 +295,7 @@ function setBotResponse(response) {
 //====================================== Toggle chatbot =======================================
 $("#profile_div").click(function () {
 	$(".profile_div").toggle();
-	$(".widget").toggle();
+	$(".chatbot_widget").toggle();
 	//if you want the bot to start the conversation
 });
 
@@ -345,7 +345,7 @@ $("#clear").click(function () {
 //close function to close the widget.
 $("#close").click(function () {
 	$(".profile_div").toggle();
-	$(".widget").toggle();
+	$(".chatbot_widget").toggle();
 	scrollToBottomOfResults();
 });
 
