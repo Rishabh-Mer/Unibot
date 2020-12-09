@@ -46,6 +46,7 @@ services:
       - Docker/env/nginx.env
     volumes:
       - ./certibot/letsencrypt:/etc/letsencrypt
+      - ./Chatbot-Widget:/usr/share/nginx/html
     ports:
       - 80:80
       - 443:443
