@@ -20,4 +20,6 @@ COPY ./Docker/bin/nginx.conf /etc/nginx/nginx.conf
 
 RUN echo "22 03 * * 2,7 root /scripts/renew.sh" >/etc/cron.d/certbot-renew
 
+RUN mkdir /webroots/chatbot.universalcollegeofengineering.edu.in
+
 CMD ["sh", "-c", "cron && Docker/env/env.sh && nginx -g 'daemon off;'"]
