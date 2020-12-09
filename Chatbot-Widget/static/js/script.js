@@ -1,4 +1,6 @@
 // ========================== greet user proactively ========================
+(function($){
+
 $(document).ready(function () {
 
 	//drop down menu for close, restart conversation & clear the chats.
@@ -652,3 +654,4 @@ function createChartinModal(title, labels, backgroundColor, chartsData, chartTyp
 	});
 
 }
+})(jQuery);
