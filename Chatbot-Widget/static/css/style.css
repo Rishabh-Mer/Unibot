@@ -22,7 +22,7 @@ body {
 		right: 0;
 		cursor: pointer;
 	}
-	.bot_chat_widget {
+	.chatbot_widget {
 	    display: none;
 	    width: 350px;
 	    right: 15px;
@@ -57,7 +57,7 @@ body {
 		cursor: pointer;
 	}
 
-	.bot_chat_widget {
+	.chatbot_widget {
 	    display: none;
 	    width: 320px;
 	    right: 15px;
@@ -91,7 +91,7 @@ body {
 		cursor: pointer;
 	}
 
-	.bot_chat_widget {
+	.chatbot_widget {
 	    display: none;
 	    width: 280px;
 	    right: 15px;
@@ -125,7 +125,7 @@ body {
 		cursor: pointer;
 	}
 
-	.bot_chat_widget {
+	.chatbot_widget {
 		display: none;
 		width: 350px;
 		right: 15px;
@@ -159,7 +159,7 @@ body {
 		cursor: pointer;
 	}
 
-	.bot_chat_widget {
+	.chatbot_widget {
 		display: none;
 		width: 350px;
 		right: 15px;
@@ -180,7 +180,7 @@ body {
 }
 /* ============= css related to chats =============== */
 
-/*.bot_chat_widget {
+/*.chatbot_widget {
 	display: none;
 	width: 350px;
 	right: 15px;
