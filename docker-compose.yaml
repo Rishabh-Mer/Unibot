@@ -47,6 +47,7 @@ services:
     volumes:
       - ./certibot/letsencrypt:/etc/letsencrypt
       - ./Chatbot-Widget:/usr/share/nginx/html
+      - /usr/share/nginx/html/env_config.js
     ports:
       - 80:80
       - 443:443
