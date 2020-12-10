@@ -634,13 +634,13 @@ responses:
               <a href="https://docdro.id/Y8ggVAB" target="_blank">Pre-Admission Notice</a>'
 
   utter_directions:
-    - text: 'Near Bhajansons & Punyadham,Kaman Bhiwandi Road,Vasai, Palghar-401208.<br> Contact Number:<br> +91 800 7000 755 <br> +91 800 7478 659 <br> +91 840 7979 167 <br>To open with Google Maps <a href ="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target = "_blank">Click Here</a>'
+    - text: 'Near Bhajansons & Punyadham,Kaman Bhiwandi Road,Vasai, Palghar-401208.<br> Contact Number:<br> +91 840 7979 167 <br> +91 800 7090 722 <br> +91 800 7478 659 <br>To open with Google Maps <a href ="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target = "_blank">Click Here</a>'
       buttons:
       - title: "Bus Service"
         payload: '/bus_service'
     
   utter_direction_h:
-    - text: 'यूनिवर्सल कॉलेज ऑफ़ इंजीनियरिंग ,भजनसेन्स  & पुण्यधाम के नज़दीक, कमान भिवंडी रोड, वसई, पालघर - 401208 <br> संपर्क करे: <br> +91 800 7000 755 <br> +91 800 7478 659 <br> +91 840 7979 167<br> गूगल मैप्स से देखने के लिए <a href="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target="_blank">यहाँ क्लिक करे | </a>'
+    - text: 'यूनिवर्सल कॉलेज ऑफ़ इंजीनियरिंग ,भजनसेन्स  & पुण्यधाम के नज़दीक, कमान भिवंडी रोड, वसई, पालघर - 401208 <br> संपर्क करे: <br> +91 840 7979 167 <br> +91 800 7478 659 <br> +91 800 7090 722<br> गूगल मैप्स से देखने के लिए <a href="https://www.google.com/maps/place/Universal+College+of+Engineering+Mumbai/@19.3505272,72.9166326,15z/data=!4m5!3m4!1s0x0:0xdedc6f62731ee7eb!8m2!3d19.3505272!4d72.9166326" target="_blank">यहाँ क्लिक करे | </a>'
       buttons:
       - title : "🔙"
         payload: '/back'
