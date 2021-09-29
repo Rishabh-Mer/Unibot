@@ -17,11 +17,20 @@
 
 ## intent:greet
 - hey
+- Hey
+- Hello
 - hello
+- Hi
 - hiiii
 - hi
+- Good Morning
+- Good Eveninig
+- Good Afternoon
+- good afternoon
 - good morning
 - good evening
+- Whats up
+- whats up
 - hey there
 - wassup
 - yo
@@ -43,36 +52,31 @@
 - No
 - Not interested
 - Stop
+- I cant
+- I wont
 - I dont want to share
 - cant provide
 - No details
 - Sorry
 - Na
 
-## intent:change_language
-- change language
-- change my language
-- language change
-- change
-- language
-- I want to change language
-
-## intent:quote_day
-- quote of the day
-- quote
-- quotes
-
 <!-- Department/Course Related -->
 ## intent:department
 - What are the departments in college?
+- How many departments
+- Branches
+- streams
+- courses
 - Branch provided by college?
 - How many stream provided by college?
 - What stream provided by college?
 - Does college offer IT department?
 - Does college offer COMPS department?
 - Does college have AL&ML department?
+- Does college have ALML department?
 - Does college have DATA ENGINEERING department?
 - Does college has CIVIL department?
+- Does college has EXTC department?
 - departments of college
 - Departmets of College
 - Departments
@@ -94,6 +98,11 @@
 - ASH
 - ash
 - applied science
+- applied science and humanities
+- applied science & humanities
+- First year
+- FY
+- common first year
 
 ## intent:IT
 - what is under course [information technology](IT)
@@ -128,6 +137,7 @@
 - Computer
 - Computer Engineering 
 - computer engineering
+- computer science
 
 ## intent:CIVIL
 - what is under course [Civil Engineering](CIVIL)
@@ -163,6 +173,7 @@
 - Artificial Intelligence
 - Machine Learning
 - Artificial Intelligence and Machine Learning Engineering
+- artificial intelligence & machine learning
 - AI&ML
 - ai&ml
 
@@ -187,6 +198,10 @@
 - Applied Science and Humanities faculty
 - faculty of Applied Science and Humanities
 - applied science and humanities faculty
+- teachers in first year
+- faculties in first year
+- teachers of applied science and humanities
+- professors of applied science and humanities
 
 ## intent:it_faculties
 - faculties of IT department
@@ -195,6 +210,8 @@
 - faculty of information technology
 - IT faculty
 - information technology faculties
+- teachers of IT
+- professors of IT
 
 ## intent:comps_faculties
 - faculties of COMPS department
@@ -203,6 +220,8 @@
 - faculty of computer engineering
 - COMPS faculty
 - computer engineering faculties
+- teachers of comps
+- professors of comps
 
 ## intent:civil_faculties
 - faculties of CIVIL department
@@ -211,28 +230,31 @@
 - faculty of Civil Engineering
 - CIVIL faculty
 - civil engineering faculties
+- teachers of civil
+- professors of civil
 
-## intent:aiml_faculties
-- faculties of AIML department
-- Artificial Intelligence and Machine Learning Engineering faculty
-- faculty of aiml
-- faculty of Artificial Intelligence and Machine Learning Engineering
-- AIML faculty
-- artificial intelligence and machine learning engineering faculties
-
-## intent:data_faculties
-- faculties of DATA engineering department
-- Data engineering faculty
-- faculty of data 
-- faculty of Data Engineering
-- DATA faculty
-- data engineering faculties
+## intent:extc_faculties
+- faculties of electronics department
+- electronics faculty
+- faculty of extc 
+- faculty of electronics Engineering
+- EXTC faculty
+- electronics engineering faculties
+- teachers of electronics engineering
+- professors of electronics engineering
 
 ## intent:ash_syllabus
 - syllabus for Applied Science and Humanities department
 - Applied Science and Humanities department syllabus
 - Applied Science and Humanities syllabus
+- first year syllabus
 - syllabus for Applied Science and Humanities
+- subjects in Applied science and humanities
+- subjects in first year
+- subjects in ash
+- modules in first year
+- modules in ash
+- modules in Applied science and humanities
 
 ## intent:it_syllabus
 - syllabus for it department
@@ -242,6 +264,10 @@
 - IT syllabus
 - IT course syllabus
 - information technology syllabus
+- subjects in information technology
+- subjects in it
+- modules in it
+- modules in information technology
 
 ## intent:comps_syllabus
 - syllabus for comps department
@@ -251,6 +277,46 @@
 - COMPS syllabus
 - COMPS course syllabus
 - Computer Engineering syllabus
+- subjects in computer engineering
+- subjects in comps
+- modules in comps
+- modules in computer engineering
+
+## intent:aiml_reason
+- Why join UG program in AIML?
+- why aiml
+- aiml reason
+- why should i opt for aiml
+- why should i join aiml
+- aiml benefits
+- aiml scope
+- why to choose aiml
+- Why join UG program in artificial intelligence and machine learning?
+- why artificial intelligence and machine learning
+- aiml reason
+- why should i opt for artificial intelligence and machine learning
+- why should i join artificial intelligence and machine learning
+- artificial intelligence and machine learning benefits
+- artificial intelligence and machine learning scope
+- why to choose artificial intelligence and machine learning
+
+## intent:data_reason
+- Why join UG program in DATA?
+- why data
+- data reason
+- why should i opt for data
+- why should i join data
+- data benefits
+- data scope
+- why to choose data
+- Why join UG program in data engineering?
+- why data engineering
+- data engineering reason
+- why should i opt for data engineering
+- why should i join data engineering
+- data engineering benefits
+- data engineering scope
+- why to choose data engineering
 
 ## intent:civil_syllabus
 - syllabus for civil department
@@ -260,24 +326,10 @@
 - CIVIL syllabus
 - CIVIL course syllabus
 - civil engineering syllabus
-
-## intent:aiml_syllabus
-- syllabus for aiml department
-- aiml department syllabus
-- aiml syllabus
-- syllabus for aiml
-- AIML syllabus
-- AIML course syllabus
-- arificial intelligence and machine learning engineering syllabus
-
-## intent:data_syllabus
-- syllabus for data department
-- data department syllabus
-- data syllabus
-- syllabus for data engineering
-- DATA syllabus
-- DATA course syllabus
-- data engineering syllabus
+- subjects in civil engineering
+- subjects in civil
+- modules in civil
+- modules in civil engineering
 
 ## intent:it_newsletter
 - newsletter of IT department
@@ -286,6 +338,55 @@
 - newsletter of information technology
 - IT newsletter
 - information technology newsletter
+- magazine of it
+
+## intent:comps_newsletter
+- newsletter of COMPS department
+- computer engineering newsletter
+- newsletter of comps
+- newsletter of computer engineering
+- COMPS newsletter
+- computer science newsletter
+- comps magazine
+- magazine of comps
+
+## intent:civil_newsletter
+- newsletter of CIVIL department
+- civil engineering newsletter
+- newsletter of civil
+- newsletter of civil engineering
+- CIVIL newsletter
+- civil magazine
+- magazine of civil
+
+## intent:aiml_newsletter
+- newsletter of AIML department
+- artificial intelligence and machine learning newsletter
+- newsletter of aiml
+- newsletter of artificial intelligence and machine learning
+- aiml newsletter
+- artificial intelligence and machine learning magazine
+- magazine of aiml
+
+## intent:data_newsletter
+- newsletter of DATA department
+- data engineering newsletter
+- newsletter of data
+- newsletter of data engineering
+- dat newsletter
+- data engineering magazine
+- magazine of data
+- magazine of data engineering
+
+## intent:ash_newsletter
+- newsletter of ASH department
+- applied humanities and sciences newsletter
+- newsletter of ash
+- newsletter of applied humanities and sciences
+- ash newsletter
+- applied humanities and sciences magazine
+- magazine of ash
+
 
 ## intent:intake
 - What is the intake of IT/comps/civil/data/AI&ML department?
@@ -310,6 +411,18 @@
 - intake for vacational course
 - How many seats for vacational course
 - How many seats for each department
+- seat count
+- seat count for IT
+- seat count for computer engineering
+- seat count for civil engineering
+- seat count for data engineering
+- seat count for artificial intelligence & machine learning
+- seat count for cloud computing
+- seat count for artificial intelligence & robotics
+- seat count for data analytics
+- seat count for information management & cyber security
+- seat count for vacational course
+- seats
 
 <!-- Admission Related -->
 ## intent:admission_schedule
@@ -328,7 +441,8 @@
 - admission start
 - admission timings
 - i want to know the admission process of the college
-- when admissions will start for AY 20-21
+- when admissions will start for AY 21-22
+- admissions of this year
 - When will online admission start?
 - i want to know the admission process of the college
 - schedule of admission
@@ -336,6 +450,9 @@
 ## intent:admission_documents
 - What are the documents required at the time of admission?
 - required documents for admission
+- docs for admission
+- admission documents
+- Which documents are required for admission?
 - Which documents are required for gujararti speaking minority applicants?
 - Which documents are required for outside maharashtra state applicants?
 - Which documents are required for OBC/ST/SC/NT1/NT2 applicants?
@@ -355,7 +472,14 @@
 - Admission Criteria for students
 - Admission criteria
 - Eligibility Criteria
+- how much marks are necessary for admission
+- how much grades are necessary for admission
+- how much percentage are necessary for admission
 - How much grade require for computer engineering
+- How much grade require for aiml
+- How much grade require for data engineering
+- How much grade require for admission
+- How much grade require for civil
 
 ## intent:diploma_admissions
 - [diploma admission](diploma_admission_schedule) details
@@ -382,26 +506,54 @@
 - diploma
 - Diploma   
 - Diploma Admission
-- Admission
+- admission for diploma students
+- when will admission for diploma students start
+- when will admission for dsy
+- when will admission for direct second year
+- admission for dsy
+- admission for direct second year
 
 ## synonym:diploma_documents
 - diploma documents
 - documents for diploma admission
 - Documents
+- documents required for diploma admission
+- documents required for dsy
+- documents required for direct second year
+- dsy documents
+- direct second year documents
+- documents for admission of diploma students
+- documents for admission of dsy
+- documents for admission of direct second year
 
 ## synonym:diploma_eligibility_criteria
 - diploma eligibility criteria
-- criteria
-- eligibility
-- qualification
+- criteria of diploma admisssion
+- eligibility for diploma admission
+- qualification for diploma admission
+- dsy eligibility criteria
+- criteria of dsy admisssion
+- eligibility for dsy admission
+- qualification for dsy admission
+- direct second year eligibility criteria
+- criteria of direct second year admisssion
+- eligibility for direct second year admission
+- qualification for direct second year admission
+- how much marks are necessary for diploma admission
+- how much marks are necessary for dsy admission
+- how much marks are necessary for direct second year admission
+- how much grades are necessary for diploma admission
+- how much grades are necessary for dsy admission
+- how much grades are necessary for direct second year admission
+- how much percentage are necessary for dsy admission
+- how much percentage are necessary for diploma admission
+- how much percentage are necessary for direct second year admission
 
 ## intent:last_date_admission
 - Date for admission
 - last date for admission
 - last date
-- last date of admission
-- Date for admission
-- last date for admission
+- admission deadline
 
 ## intent:brochure
 - Where can i download Brochure of College
@@ -412,6 +564,8 @@
 - Brochure Download
 - College Prospectus
 - Prospectus
+- ucoe brochure
+- ucoe prospectus
 
 ## intent:dte_code
 - What is the DTE code for universal college of engineering?
@@ -419,9 +573,17 @@
 - DTE Code please
 - DTE code
 - DTE
+- DTE code of ucoe
 
 ## intent:cutoff
-- What is the cut off percentage for IT department?
+- What is the cut off percentage for IT
+- What is the cut off percentage for COMPS
+- What is the cut off percentage for AIML
+- What is the cut off percentage for DATA
+- What is the cut off percentage for CIVIL
+- What is the cut off percentage for EXTC
+- What is the cut off percentage for ASH
+- What is the cut off percentage for first year
 - cutoff 
 - cutoff details
 - cutoff of this year
@@ -464,10 +626,13 @@
 
 ## intent:payment
 - What are the different payment methods through which fees can be paid?
-- Payment methods ?
+- Payment methods
 - Payment options
-- How can i pay fees ?
+- How can i pay fees
 - Ways to pay fees 
+- online payment for fees
+- how to pay fees
+- payment
 
 ## intent:payment_date
 - When is the last date to pay the fees ? 
@@ -475,15 +640,18 @@
 - Fees last day ?
 - Last day for fees payment
 - last day for paying fees
+- daedline for fees
 
 ## intent:scholarship
 - Does college provide any scholarships?
 - Is there any scholarships
 - What about scholarships
-- any scholarships ?
+- any scholarships
 - scholarship details
-- scholarships ?
-- Is there any schorship u provide
+- scholarships
+- Is there any schorship you provide
+- scholarship
+- financial aids
 
 <!-- Reservation and Minority Related -->
 ## intent:reservation
@@ -491,7 +659,11 @@
 - cast reservation is supported
 - OBC, SC/ST
 - obc
+- obc reservation
+- obc priveleges
 - sc st
+- sc st priveleges
+- sc st reservation
 - sc
 - reservation
 - cast
@@ -499,6 +671,9 @@
 - which reservations are there
 - what reservation
 - Does college have reservation
+- casts priveleges
+- what are priveleges for casts
+- EWS
 
 ## intent:minority
 - which minority
@@ -508,6 +683,10 @@
 - minority in college
 - minority
 - college minority
+- linguistic minority
+- religious minority
+- minority privelege
+- minorities
 
 <!-- Transport Related -->
 ## intent:transport_way
@@ -520,20 +699,32 @@
 - Transport available
 - transport
 - other transport available
+- travelling to college
+- how to get to college
+- transportation
+- transport way
+- Whats the best transport system to reach the college
+- Are the roads safe to get to the college
+- How many possible routes are there to reach the campus
 
 ## intent:bus_service
 - Bus service
-- Does college provide bus service?
-- Pickup Point for Bus service?
-- Which is the nearest bus stop from the college? 
-- What is the bus pickup and bus timing?
+- Does college provide bus service
+- Pickup Point for Bus service
+- Which is the nearest bus stop from the college
+- What is the bus pickup and bus timing
 - Bus timing 
 - Can I know about bus service
 - timing for bus
 - timings for bus
 - can i get to know what are the available travelling facilities in the campus
 - travelling facility from campus
-- What is the bus pickup and bus timing?
+- What is the bus pickup and bus timing
+- transportation facility
+- is there bus service available
+- from locations bus is available
+- Does the college provide bus system
+
 
 ## intent:bus_fees
 - How much [fees for bus service](bus_fees)
@@ -541,22 +732,6 @@
 - [bus fees](bus_fees)
 - [fees for bus](bus_fees)
 - [bus fees](bus_fees) structure  
-
-## intent:bus_id
-- Where to apply for [bus id](busid)
-- Where to apply for [bus id](busid) card
-- [bus id](busid)
-- where to get [bus id](busid) from
-- I want a new [bus id](busid)
-- Where can i apply for new [bus identity]{"entity": "busid", "value": "bus identity"} card
-- Apply for [bus id](busid) card
-- bus id card
-- how to apply for bus id card
-- [Bus id]{"entity":"busid", "value": "Bus id"}
-
-## synonym:busid
-- Bus id
-- bus identity
 
 ## intent:parking
 - parking
@@ -572,6 +747,10 @@
 - is there any parking space provided for private vehicle
 - vehical parking 
 - parking for vehicle
+- is parking spacious
+- four wheels/car parking
+- motorcycle/bike/two wheels parking
+- parking service
 
 ## intent:concession
 - does college provides concession
@@ -586,28 +765,9 @@
 - concession from college
 - S.T Bus concession
 - local train concession
+- transportation concession
 
 <!-- College Related -->
-## intent:notices
-- [Notice](notice)
-- [show me notice]{"entity": "notice", "value": "notice"}
-- College [Notice](notice)
-- [revaluation notice]{"entity": "notice", "value": "notice"}
-- [Latest notice]{"entity": "notice", "value": "notice"}
-- Latest [Notice](notice)
-- [Latest updates]{"entity": "notice", "value": "updates"}
-- [Latest update]{"entity": "notice", "value": "update"}
-- Examination [Notice](notice)
-- [Examination notice]{"entity": "notice", "value": "notice"}
-- [Examination updates]{"entity": "notice", "value": "updates"}
-- [atkt notice]{"entity": "notice", "value": "notice"}
-- ATKT [Notice](notice)
-
-## synonym:notice
-notice
-notices
-updates
-update
 
 ## intent:images
 - show me picture
@@ -631,8 +791,20 @@ update
 - show me campus photos
 - show me college images
 - show me college image
+- show me college pictures
+- show me college pics
 - show me campus photo
-
+- photos
+- pictures
+- pics
+- images
+- college photos
+- college pictures
+- college pics
+- college images
+- how does college looks like
+- college infrastructure
+- infrastructure
 
 ## intent:appraise
 - Wow
@@ -645,13 +817,27 @@ update
 - College is now
 - i like it
 - good
+- loved it
+- too good
+- best
+- awesome
 
 ## intent:more
 - More
 - more photos
 - more images
+- more pics
+- more pictures
+- other photos
+- other images
+- other pics
+- other pictures
+- another photos
+- another images
+- another pics
+- another pictures
 - show me more
-- another image
+- another one
 
 ## intent:principal
 - who is principal
@@ -659,7 +845,6 @@ update
 - principal name
 - name of principal
 - what is the name of principal
-- principle
 - principal
 - name principal
 - principal of college
@@ -670,6 +855,11 @@ update
 - meet Principal
 - Appoinment to meet Principal
 - time to meet Principal
+- headmaster
+- headmistress
+- how to meet principal
+- when is principal present in college
+- principal appointment
 
 ## intent:ucoe
 - what is ucoe
@@ -677,68 +867,95 @@ update
 - ucoe is what
 - what means ucoe
 - ucoe meaning
+- ucoe fullform
+- ucoe abbreviation
 
 ## intent:college_timing
 - What are the college timings?
 - college timings
 - college timing
 - can i get the working hours of the college
+- when is college open
+- when are holidays
+- when is college closed
+- holidays
+- weekend holidays
+- college reporting time
 
 ## intent:anti_ragging
--  What is the anti-ragging policy of the college?
+- What is the anti-ragging policy of the college
 - Anti ragging policy
-- How does college deal with nati ragging
+- How does college deal with ragging
 - How does college deal with anti ragging
-
-## intent:academic_calendar
-- Academic Calendar
-- No. of instructional days of even semester year 2019-2020
-- List of holidays in even semester 2019-2020
-- Show the academic calendar for even semester year 2019-2020
-- Number of holidays
-- List of holidays
-- acadamic calendar for this year
-- acadmic calendar
-- holiday list
+- ragging
+- anti ragging
+- bullying
+- anti bullying
 
 ## intent:attendance
-- What are the attendance criteria?
+- What are the attendance criteria
 - attendance criteria in college
 - attendance criteria
 - What is attendance criteria
 - What is the minimum attendance required?
+- how much attendance is required
+- minimum attendance
+- attendance
+- least attendance percentage
+- minimum attendance percentage
+- attendance percentage
 
 ## intent:naac_grade
-- Does college is affiliated with Naac ?
+- Does college is affiliated with Naac
+- is college affiliated to naac
 - What naac grade is college have
 - college is awarded with which grade by naac
 - naac grade
-- nacc
+- naac
 - naac accrediation
 - Naac Accrediation
+- National Assessment and Accreditation Council
+- National Assessment and Accreditation Council grade
+- National Assessment and Accreditation Council accrediation
 
 ## intent:college_type
-- is college aided ?
-- is college unaided ?
+- is college aided
+- is college unaided
+- is college autonomous
 - aided
 - unaided
 - what type of college is
 - aided college or unaided
 - college type
+- autonomous
 
 ## intent:affiliated
 - is college affiliated with MU
 - is college affiliated with Mumbai University
-- college affiliated with MU ?
-- mumbai university affiliated ?
+- college affiliated with MU
+- mumbai university affiliated
 - affliated with MU
+- college affiliation
+- which university college is affiliated to
+- is college affiliated to pune university
+- college is affiliated to which university
+- affiliation
+- affiliated
+- mumbai university
+- mumbai university affiliation
 
 ## intent:course_duration
 - what is course duration
 - duration of course
 - Duration of IT Course
 - Duration of comps course
+- Duration of aiml course
+- Duration of data course
+- Duration of civil course
 - duration of the course
+- duration of courses
+- how many years for courses
+- 4 years or 3 years for be
 
 ## intent:ict_classroom
 - how this college implement ICT tools in teaching and learning
@@ -746,15 +963,28 @@ update
 - ICT implementation in college
 - ICT implementation
 - Are you update with latest equipment
+- information communication technology classrooms
+- technology tools
+- technology tools in classroom
+- ict
+- information communication technology
+- technical tools in classroom
 
 ## intent:ac_classroom
 - Does College have AC classrooms
-- ac classroom available ?
-- there are any AC classrooms ?
+- ac classroom available
+- there are any AC classrooms
 - ac classroom available
 - ac classroom
 - ac room
 - Does the college is fully air conditioned
+- air conditioner
+- air conditioned classroom
+- are classrooms air conditioned
+- ac avaialblity
+- ac clasrooms avaialblity
+- is college fully air conditioned
+- is college air conditioned
 
 ## intent: faculty_name
 - hod of IT
@@ -763,13 +993,25 @@ update
 - hod of each departments
 - who is the hod of each departments
 - list of faculty
+- teachers
+- professors
+- hods
+- hod
+- hod of first year
+- hod of ASH
+- list of teachers
+- list of professors
+- list of hods
 
 ## intent:college_reopen
-- when will the college reopen?
-- when will college resume?
-- when will college restart?
+- when will the college reopen
+- when will college resume
+- when will college restart
 - when will college open
 - when will college resume
+- college reopening
+- when will college start
+- when will college start offline
 
 ## intent:applying_id
 - Where to apply for [college id](collegeid)
@@ -790,6 +1032,10 @@ update
 - College id
 - college identity
 - College identity
+- students id
+- students identity card
+- id card
+- identity card
 
 ## intent:about_college
 - College information
@@ -799,10 +1045,16 @@ update
 - About college
 - Details about College
 - I want to know about college
+- college details
+- ucoe details
+- more details of college
+- more information of college
+- about ucoe
 
 <!-- College Facility -->
 ## intent:facility
 - What are facility available in college
+- What are facilities available in college
 - Facility provided by college
 - facility
 - facilities
@@ -812,21 +1064,37 @@ update
 - available facility
 - can i get to know what are the available travelling facilities in the campus
 - What all facilities do you have
+- list of facilities
+- list of facilities provided by college
+- college facilities
+- ucoe facilities
+- special facilities
+- privileges
 
 ## intent:hostel
-- Is there any hostel or staying facility available in or near the college?
+- Is there any hostel or staying facility available in or near the college
 - does college have hostel
 - does college provide accomodation
 - Hostel in College
 - Girls hostel
 - Boys hostel
 - Hostel Facility in college
+- Are there are rooms to stay on rent around the campus
+- college hostel
+- hostel
+- is hostel available
+- hostel facility
 
 ## intent:locker_facility
 - Is [locker](facility_type) facility provided?
 - Does college has [lockers](facility_type)
 - Does college provide [lockers](facility_type)
 - [Locker](facility_type) Facility in College
+- lockers avilable
+- lockers
+- lockers facility available
+- storage facility
+- are there lockers available
 
 ## intent:wifi_facility
 - Does college provide [wifi](facility_type)?
@@ -834,6 +1102,9 @@ update
 - [wifi](facility_type) facility in college
 - how to connect to college [wifi](facility_type)
 - [wifi](facility_type) facility
+- wifi
+- internet facilities
+- internet facilities in college
 
 ## intent:bcr_facility
 - Does college has [bcr](facility_type)
@@ -846,8 +1117,10 @@ update
 - does college have [bcr](facility_type) in campus
 - [Boys common room](facility_type)
 - Boys room
+- Boys common room
 - Common room for boys and girls
 - What are the facilities for boys and girls
+- is bcr spacious
 
 ## intent:gcr_facility
 - Does college has [gcr](facility_type)
@@ -860,7 +1133,9 @@ update
 - does college have [gcr](facility_type) in campus
 - [Girls common room](facility_type)
 - Girls room
+- girls common room
 - Common room for [boys and girls](facility_type)
+- is gcr spacious
 
 ## intent:sports_room
 - Does college has [sports](facility_type) room
@@ -870,12 +1145,16 @@ update
 - [outdoor sports]{"entity":"facility_type", "value":"sports"}
 - Does college has [indoor and outdoors sports]{"entity":"facility_type", "value":"sports"} facility
 - Can you tell me about [sports room](facility_type)
+- sports room
+- which facilities are there for sports
+- which sports are played in college
 
 ## synonym:facility_type
 - Locker
 - lock
 - WIFI
 - wifi
+- internet
 - bcr
 - BCR
 - Bcr
@@ -887,6 +1166,7 @@ update
 - indoors
 - games
 - Games
+- playground
 
 <!-- College Activities -->
 ## intent:extra_activities
@@ -896,6 +1176,7 @@ update
 - [extra activities](activities)
 - [Extra Curricular activies](activities) in college
 - can you tell about the [extra curricular activities](activities) 
+- activities held in college 
 
 ## intent:csi
 - what is [csi](activities)
@@ -951,6 +1232,8 @@ update
 - what is [student council](activities)
 - [student council](activities)
 - [Student Council](activities)
+- students group
+- is there any group for students
 
 ## intent:speak_club
 - what is [Speak Club](activities)
@@ -965,6 +1248,9 @@ update
 - what is [women development cell](activities)
 - [women development cell](activities)
 - [Women Development Cell](activities)
+- special groups for female students
+- special groups for girls
+- special groups for women
 
 <!-- Events Related -->
 ## intent:technical_events
@@ -974,6 +1260,10 @@ update
 - technical events at UCoE
 - what are technical events conducted 
 - technical events organized at college
+- list of technical events
+- events for technology
+- does college organize technical events
+- are there any technical events
 
 ## intent:events
 - what events are held
@@ -985,11 +1275,13 @@ update
 - Events at UCoE
 - How many events
 - College festivals
+- competitions
+- competitions held in college
+- list of events
+- college functions
+- functions in college
+- functions held in college
 
-## intent:hackstomp_date
-- When is hackstomp scheduled?
-- when is hackstomp?
-- When hackstomp gets scheduled
 
 ## intent:hackstomp
 - What is hackstomp?
@@ -997,6 +1289,11 @@ update
 - Does college organised hackathon?
 - what happens in hackstomp
 - hackstomp details
+- hackathon
+- is there any hackathon in college
+- does college organize hackathon
+- how is hackstomp held
+- hackstomp rules
 
 ## intent: IETE
 - what is IETE
@@ -1006,12 +1303,6 @@ update
 - details of iete
 - IETE
 
-## intent:IETE_schedule
-- When is IETE scheduled?
-- when is IETE?
-- iete date
-- iete schedule
-
 ## intent:vyro
 - VYRO
 - vyro
@@ -1020,22 +1311,12 @@ update
 - VYro what
 - details of Vyro
 - vyro
-
-## intent:vyro_schedule
-- When is vyro going to be held? 
-- when is vyro ?
-- vyro date
-- vyro schedule
-
-## intent:aurora_schedule
-- When is AURORA scheduled?
-- when will college sports be held
-- when are cultural events going to be held
-- sports date
-- date for sports in college
-- aurora date
-- sport schedule
-- aurora schedule
+- vyro stands for
+- vyro fullform
+- rules for vyro
+- vyro rules
+- is vyro inter-college
+- intercollege events held by college
 
 ## intent:aurora
 - what is aurora
@@ -1045,6 +1326,8 @@ update
 - Aurora details
 - aurora what
 - Aurora
+- intra college events
+- is aurora intra college event
 
 ## intent:tantrostav
 - what is tantrostav
@@ -1053,7 +1336,9 @@ update
 - tantrostav details
 - tantrostav what
 - tantrostav
-
+- is tantrotsav intercollege event
+- intercollege technical events
+- intercollege technical events in college
 
 <!-- Canteen Related -->
 ## intent:canteen
@@ -1071,15 +1356,15 @@ update
 - does canteen provide chips
 - chips
 - Lays,bingo,kurkure,balaji
-- Which beverages are provided?
+- Which beverages are provided
 - Beverages
 - drinks 
 - soft drinks
-- which soft drinks you have ?
-- Soda can ?
-- Juice Bottle ?
-- Buttermilk is available ?
-- Can i get juice ?
+- which soft drinks you have
+- Soda can
+- Juice Bottle
+- Buttermilk is available
+- Can i get juice
 - What is availabe to quench my thirst ?
 - Does college provide meals? 
 - What is available in college canteen
@@ -1087,9 +1372,15 @@ update
 - what it is in canteen
 - what i can purchase from canteen
 - canteen facility
+- food
+- food in college
+- is there any canteen in college
+- lunch
+- tea
+- water
 
 ## intent:food
-- What is today’s menu? 
+- What is today’s menu
 - Canteen Menu
 - Today's Menu
 - Menu
@@ -1098,15 +1389,21 @@ update
 - evening snacks menu
 - canteen menu
 - can i get lunch menu
+- whats in food
 
 ## intent:non_veg
-- Does college provide nonveg food?
-- Is non veg food is available ?
-- Canteen have Non Veg food ?
+- Does college provide nonveg food
+- Is non veg food is available
+- Canteen have Non Veg food
 - can i get chicken here
-- canteen have chicken, fish, mutton ?
+- canteen have chicken, fish, mutton
 - non-veg
 - non veg food
+- nonveg
+- is nonveg food allowed in college
+- can we get fish in college
+- is pescatarian food available
+- can we get egg based food
 
 <!-- Location Related -->
 ## intent:directions
@@ -1144,6 +1441,11 @@ update
 - where is ucoe
 - Can i get location of college 
 - direction of college
+- directions for college
+- How many possible routes are there to reach the campus
+- coordinates of college
+- address of college
+- how to reach college
 
 ## intent:distance
 - What is the distance of college from Borivali
@@ -1152,6 +1454,7 @@ update
 - What is the distance of college from Thane
 - What is the distance of college from Bhiwandi
 - What is the distance of college from Kaman
+- What is the distance of college from Mumbai
 - What is the distance of college from Chinchoti
 - How far college is from Borivali
 - How far college is from Vasai
@@ -1159,12 +1462,22 @@ update
 - How far college is from Thane
 - How far college is from Bhiwandi
 - How far college is from Kaman
+- How far college is from Mumbai
 - How far college is from Chinchoti
+- How much time does it take to reach from mumbai
+- How much time does it take to reach from bhiwandi
+- How much time does it take to reach from vasai
+- How much time does it take to reach from thane
+- How much time does it take to reach from naigaon
+- How much time does it take to reach from chinchoti
+- How much time does it take to reach from kaman
+- How much time does it take to reach from borivali
 - Distance from Borivali
 - Distance from Vasai
 - Distance from Naigaon
 - Distance from Thane
 - Distance from Bhiwandi
+- Distance from Mumbai
 - Distance from Kaman
 - Distance from Chinchoti
 
@@ -1175,20 +1488,33 @@ update
 - Name the nearest station
 - nearest station from college
 - nearest station
+- is vasai the nearest station from college
+- how much far is nearest station
+- nearest railway station
+- is kaman station nearest to college
+- how much far is kaman station from college
+- how much far is chinchoti station from college
 
 <!-- Examination Related -->
 ## intent:examination
 - When will the semester examinations for year FE/SE/TE/BE begin?
-- When Sem is starting
-- When is the final exam ?
-- Final Exam ?
-- when FE have final Exam ?
+- When Semester is starting
+- When is the final exam
+- Final Exam
+- when FE have final Exam
 - Final Exam Dates please
 - examination details 
+- when will exam end
+- semester dates
+- exam schedule
+- semester schedule
+- exam details
+- semester details
+- how are exams held in college
 
 ## intent:grading_query
-- What is a credit allocation scheme?
-- What are the passing criteria?
+- What is a credit allocation scheme
+- What are the passing criteria
 - Number of ATKT allowed for next semester
 - Tell me something about grading system
 - credit system
@@ -1198,6 +1524,10 @@ update
 - maximum numbers of KT allowed?
 - how in grading invaluated
 - grading system
+- rubrics of college
+- how are students graded
+- what are credits
+- rubrics system
 
 <!-- Library Related -->
 ## intent:ask_library
@@ -1209,15 +1539,22 @@ update
 - any library in college
 - library facility
 - how do i get information of library
-- library facliity
+- library faciliity
 - Library
+- who is librarian
+- librarian
+- name of the library
+- archivia
+- on which floor library is
+- resources in library
 
 ## intent:library_details
-- How many library cards does college provide?
-- Is there any fine if a student returns the book after the due date?  
-- What is the maximum duration for which a book is issued?
+- How many library cards does college provide
+- Is there any fine if a student returns the book after the due date
+- What is the maximum duration for which a book is issued
 - fine for late book return
 - how many books can be issued
+- how many books can i issue
 - maximum numbers for books issued
 - books issued
 - fine 
@@ -1225,6 +1562,8 @@ update
 - how many books can be issued
 - fine for books
 - Library details
+- how to issue books
+- timelimit for returning a book
 
 ## intent:library_timings
 - Library timing
@@ -1234,9 +1573,11 @@ update
 - timings for library
 - timing for students in library
 - what are library timings
+- when is library open
+- when can i issue a book
 
 ## intent:library_card 
-- How can I apply for a library card ?
+- How can I apply for a library card
 - apply library card
 - how apply for library card
 - how can i get library card
@@ -1244,6 +1585,9 @@ update
 - library card procedure
 - Apply for library card
 - Apply for Library Card
+- how many library card can i get
+- how to get library card
+- application for library card
 
 <!-- Placement Related -->
 ## intent:placement
@@ -1254,6 +1598,8 @@ update
 - tell me about placement details
 - placements
 - placement
+- placement criteria
+- how students are placed
 
 ## intent:placement_companies
 - how many companies come for placements 
@@ -1261,6 +1607,8 @@ update
 - company
 - companies
 - which companies in college for placement
+- placement companies
+- placement firms
 
 ## intent:placed_student
 - how many students got placed
@@ -1269,6 +1617,7 @@ update
 - students placed
 - students placed in IT
 - students placed from Comps
+- previous year placements
 
 <!-- Bot Related -->
 ## intent:thankyou
@@ -1277,6 +1626,11 @@ update
 - thank you
 - thx
 - thanks very much
+- tysm
+- TYSM
+- thak you so much
+- thnx
+- ty
 
 ## intent:goodbye
 - Bye
@@ -1290,13 +1644,15 @@ update
 - see you later
 - have a good day
 - so long
-- good by
+- good bye
+- sayonara
+- by
+- cya
+- see ya
 
 ## intent:bot_challenge
 - bot
 - challenge
-
-<!-- Hindi -->
 
 <!-- Navigation -->
 ## intent:back
@@ -1311,262 +1667,6 @@ update
 - Go back
 - back
 
-<!-- Hindi Init -->
-## intent:lang_h
-- [Hindi](language)
-- Hindi
-
-## intent:greet_h
-- नमस्कार
-- नमस्कार
-- नमस्ते
-
-<!-- Admission Hindi -->
-## intent:admission_h
-- एडमिशन डिटेल
-- एडमिशन
-
-## document_h
-- एडमिशन के वक़्त कौनसे डाक्यूमेंट्स की ज़रूरत होती है 
-- एडमिशन के वक़्त कोनसे डाक्यूमेंट्स चाहिए 
-
-## intent:brochure_h
-- कॉलेज ब्रोशर डाउनलोड
-- कॉलेज ब्रोशर
-
-## intent:admission_h
-- एडमिशन  
-- एडमिशन की जानकारी
-- एडमिशन डिटेल 
-- एडमिशन
-
-## intent:admission_schedule_h
-- एडमिशन शिड्यूल
-- शिड्यूल
-
-## intent:docs_h
-- डाक्यूमेंट्स रिक्वायर्ड
-- एडमिशन के वक़्त कौनसे डाक्यूमेंट्स की ज़रूरत होती है 
-
-## intent:merit_h
-- कितने मेरिट लिस्ट लगेंगे 
-- मेरिट लिस्ट 
-
-## intent:cutoff_h
-- कटऑफ कितना है ?
-- कटऑफ परसेंटेज 
-- कटऑफ परसेंटेज 
-- लास्ट ईयर कटऑफ 
-
-## intent:dte_h
-- कॉलेज DTE कोड
-- कॉलेज का DTE कोड क्या है  
-
-<!-- Reservation and Miority Hindi -->
-## minority_h
-- डाक्यूमेंट्स फॉर गुजराती माइनॉरिटी 
-- डाक्यूमेंट्स रिक्वायर्ड  
-
-## reserved_h
-- डाक्यूमेंट्स फॉर रिजर्व्ड केटेगरी 
-- डाक्यूमेंट्स रिक्वायर्ड 
-
-<!-- Fees Hindi -->
-## intent:fees_h
-- फीस डिटेल  
-- फीस
-
-## intent:fees_h_button
-- फीस के बारेमे बताइये 
-- फीस की जानकारी चाहिए
-
-## intent:scholarship_h
-- कॉलेज स्कालरशिप देता है ?
-- फीस माफ़ी के लिए कोनसी सुविधा है ?
-- कॉलेज स्कालरशिप की सुविधा देता है ? 
-- स्च्लोरशिप के लिए क्या क्राइटेरिया है ?
-
-## intent:payment_h
-- पेमेंट ओप्तिओंस 
-- पेमेंट के तरीके 
-
-<!-- Location Hindi -->
-## intent:location_search_h
-- कॉलेज लोकेशन 
-- लोकेशन 
-
-## intent:directions_h
-- मैप लोकेशन दें
-- स्थान
-- नक्शा
-- स्थान दें
-
-<!-- Department Hindi -->
-## intent:department_h
-- कॉलेज में कौन से विभाग हैं?
-- कॉलेज द्वारा प्रदान की गई शाखा?
-- कॉलेज द्वारा कितनी स्ट्रीम प्रदान की गई हैं?
-- क्या कॉलेज IT विभाग प्रदान करता है?
-- क्या कॉलेज COMPS विभाग प्रदान करता है?
-- क्या कॉलेज में AI&ML विभाग है?
-- क्या कॉलेज में DATA विभाग है?
-- क्या कॉलेज में CIVIL विभाग है?
-- विभाग
-- स्ट्रीम 
-
-## intent:intake_h
-- टोटल सीट्स 
-- इन्टेक फॉर डिपार्टमेंट्स  
-- सभी ब्रांच की कितनी सीट्स है ?  
-
-<!-- College Hindi -->
-## intent:transport_way_h
-- कॉलेज कैसे पहोचे
-- कॉलेज पहोचने के तरीके
- 
-## intent:college_h
-- कॉलेज के बारे में जानकारी 
-- कॉलेज के बारे में कुछ बताइये 
-- कॉलेज की जानकारी
-
-## intent:principal_h
-- कॉलेज के प्रिंसिपल कोण है 
-- प्रिंसिपल का  नाम क्या है 
-
-## intent:attendance_h
-- कॉलेज का अटेंडेंस क्राइटेरिया क्या है 
-- अटेंडेंस कितना होना चाहिए 
-
-## intent:academic_calendar_h
-- इस सेमेस्टर में कितने वर्किंग डेज है
-- हॉलिडे की लिस्ट दे  
-- फाइनल एक्साम्स कब है 
-- ओरल एक्साम्स कब है 
-- अकादमिक कैलेंडर बताये 
-- IAT 1 कब है 
-
-## intent:college_timing_h
-- कॉलेज टाइमिंग 
-- टाइमिंग 
-
-## intent:images_h
-- कैंपस के फोटोज
-- फोटोज
-- कैंपस के फोटोज
-- फोटोज
-- कॉलेज की फोटोज 
-- कॉलेज फोटो
-- कॉलेज की तस्वीर 
-- कॉलेज की तस्वीर बताइये
-
-## intent:about_college_h
-- कॉलेज के बारे में कुछ बताइये 
-- कॉलेज के बारे में जानकारी दीजिये 
-- कॉलेज की जानकारी 
-
-<!-- Facilities Hindi -->
-## intent:facility_h
-- कौनसी फैसिलिटी है 
-- फैसिलिटी
-
-## intent:locker_facility_h
-- क्या कॉलेज में लाकर की सुविधा है? 
-- लाकर फैसिलिटी 
-- लाकर सुविधा है?
-
-## intent:wifi_facility_h
-- क्या कॉलेज वाई फाई  की सेवा देते है
-- वाई फाई  की सेवा
-
-## intent:sports_room_h
-- स्पोर्ट्स फैसिलिटी
-- खेल कक्ष फैसिलिटी
-- खेल
-<!-- Bus Service Hindi -->
-## intent:bus_service_h
-- बस सर्विस 
-- कॉलेज सर्विस   
-
-## intent:bus_fees_h
-- बस फीस 
-- बस की फीस 
-
-## intent:busid_h
-- बस आइडेंटिटी कार्ड बनाने के लिए क्या करना होगा 
-- बस आइडेंटिटी कार्ड कहा से बनाना है 
-
-<!-- Canteen Hindi -->
-## intent:canteen_h
-- कैंटीन का मेनू क्या है 
-- कैंटीन मेनू 
-- खाने में क्या है
-- कैंटीन का मेनू क्या है 
-- कैंटीन मेनू 
-- खाने में क्या है
-- कैंटीन 
-
-## intent:menu_h
-- कैंटीन में क्या क्या मिलता है  
-- क्या है कैसा है 
-- कॉफ़ी मिल सकती है ?
-
-<!-- Placement Hindi -->
-## intent:placement_h
-- प्लेसमेंट की जानकारी दे
-- प्लेसमेंट की जानकारी दे 
-- प्लेसमेंट के बारे में बताइये 
-- प्लेसमेंट डिटेल्स 
-- प्लेसमेंट 
-- प्लेसमेंट की जानकारी चाहिए
-
-## intent:TPO_h
-- TPO ऑफिस कहा है 
-- TPO ऑफिस
-
-## intent:TPO_name_h
-- TPO अफसर कौन है 
-- TPO अफसर का नाम क्या है 
-- TPO अफसर
-
-## intent:placement_detail_h
-- प्लेसमेंट की जानकारी दे 
-- प्लेसमेंट के बारे में बताइये 
-- प्लेसमेंट डिटेल्स 
-
-## intent:placement_companies_h
-- कॉलेज में कौनसी कंपनी आती है प्लेसमेंट के लिए
-- प्लेसमेंट के लिए कौनसी कंपनी आती है
-
-<!-- Examination Hindi -->
-## intent:examination_h
-- सेमेस्टर एग्जाम कब से शुरू होंगे ?
-- सेमेस्टर एग्जाम
-
-<!-- Library Hindi -->
-## intent:library_card_h
-- लाइब्रेरी कार्ड बनाने के लिए क्या करना होगा
-- लाइब्रेरी कार्ड कहा से बनाना है 
-
-<!-- ID hindi -->
-## intent:applying_id_h
-- आई डी कार्ड बटन
-- कार्ड बटन
-- आई डी बटन
-
-## intent:college_id_h
-- कॉलेज आइडेंटिटी कार्ड बनाने के लिए क्या करना होगा
-- कॉलेज आइडेंटिटी कार्ड कहा से बनाना है 
-
-<!-- Events Hindi -->
-## intent:events_h
-- कॉलेज इवेंट्स
-- इवेंट्स
-
-<!-- Feedback -->
-## intent:feed_h
-- कॉलेज फीडबैक 
-- फीडबैक 
-
 <!-- chit-chat -->
 ## intent:how_old_college
 - how old is college
@@ -1574,6 +1674,10 @@ update
 - how old college is
 - college age
 - college years
+- college since
+- ucoe establishment
+- college establishment
+- when was college established
 
 ## intent:founder
 - who is founder of college
@@ -1586,11 +1690,15 @@ update
 - Chairman of college
 - chairman of ucoe
 - who is the chairman
+- who established college
+- who founded ucoe
 
 ## intent:who_are_you
-- what is your name bot?
+- what is your name bot
 - what is your name
-- who are you ?
+- who are you
+- what should i call you
+- whats your name
 
 ## intent:ok
 - k
@@ -1602,6 +1710,7 @@ update
 - kk
 - Okay
 - okazzz
+- 👍
 
 ## intent:what_else
 - What else can you help us with
@@ -1609,13 +1718,16 @@ update
 - What can you do help
 - What else can you help
 - How can you help me
-- what else 
+- what else
+- what else can you do
+- what more
 
 ## intent:askwork
-- What you do ?
-- What's this ?
-- What can you do ?
-- What is your job ?
+- What you do
+- Whats this
+- What can you do
+- What is your job
+- what do you do
 
 ## intent:ask_restaurant
 - restaurants
@@ -1848,6 +1960,7 @@ update
 - You live around here?
 - Where are you from
 - where you live
+- do you live in college
 
 ## intent:telljoke
 - joke
@@ -1872,14 +1985,14 @@ update
 - Could you tell me a joke.
 - Would you share a joke with me.
 - Could you please share a joke with me.
-- Make me laugh.
+- Make me laugh
 - Tell me something funny.
 - Entertain me with a joke.
 - Tell me something that you think will make me laugh.
 - I want to hear something funny.
 - Give me some comic relief.
-- Can you tell a joke?
-- Know any jokes?
+- Can you tell a joke
+- Know any jokes
 - Come up with a joke you think I'll find funny.
 - Let's hear a joke from you.
 - say a joke that's funny
@@ -1892,7 +2005,11 @@ update
 - say a joke that's so bad it's funny
 - make me laugh with a bad joke
 - give me a good joke
-- you can say a jok
+- you can say a joke
+- do comedy
+- komedi pliz
+- lets have fun
+- tell a joke
 
 ## intent:handleinsult
 - you're a loser lmao
@@ -1946,6 +2063,15 @@ update
 - bitch
 - fuck u
 - idiot
+- moron
+- dumbass
+- shithead
+- chutiye
+- chutiya
+- bsdk
+- bc
+- mc
+- just die
 - deal with my ass, you bitch
 - you son of a bitch
 - shut up asshole
@@ -1980,6 +2106,7 @@ update
 - yes
 - thats right
 - yeah
+- yup
 
 ## intent:ask_time
 - what is the current time?
@@ -2091,6 +2218,7 @@ update
 - how old are you
 - How old are you?
 - how old are u
+- whens your birthday
 
 ## intent:ask_whoami
 - Who am I?
@@ -2119,61 +2247,7 @@ update
 - can you tell me what my identity is?
 - can you tell me who I am?
 - who am i
-
-## intent:ask_languagesbot
-- What languages can you use?
-- Which languages do you speak?
-- What are the languages you can speak?
-- In which languages can you speak?
-- What languages do you know?
-- What languages are you fluent in?
-- In which languages are you fluent?
-- What languages can you converse in?
-- What languages do you know how to use?
-- Which languages are you familiar with?
-- What languages can you use?
-- what languages are you familiar with?
-- what languages you know?
-- In what languages are you fluent enough?
-- what languages you can speak ?
-- what languages are you comfortable speaking at?
-- what languages are you good at speaking?
-- what languages you are well versed ?
-- what languages you can be comfortable speaking?
-- what languages you prefer more speaking at?
-- what languages you can handle well?
-- Do you know any other languages?
-- Do you speak any other languages?
-- What languages do you know?
-- What languages do you speak?
-- What do you speak?
-- Speak any other languages?
-- Can you communicate in any other languages?
-- Whats languages can you communicate in?
-- How many languages do you know?
-- what languages do you know?
-- tell me some languages you know?
-- do you speak any other languages?
-- what else do you know besides English?
-- are you bilingual?
-- are you multilingual?
-- what foreign languages do you know?
-- what foreign languages are you fluent in?
-- how many languages are you fluent in?
-- how many languages do you know?
-- How many languages do you know?
-- How many languages can you speak?
-- What languages are you fluent in?
-- How many different languages are you fluent in?
-- How many languages do you have knowledge of?
-- What are all of the different languages you can speak?
-- Are you familiar with more than one language?
-- Can you speak more than one language?
-- Do you know other languages?
-- How many languages are you familiar with?
-- can you speak in italian?
-- do you speak german?
-- Do you speak german?
+- who am i to you
 
 ## intent:ask_whatismyname
 - what is my name?
@@ -2214,6 +2288,8 @@ update
 - What is my full name?
 - What do people call me?
 - What exactly is my name?
+- my name is
+- whats my name
 
 ## intent:ask_howdoing
 - Ahoy matey how are you?
@@ -2301,6 +2377,8 @@ update
 - Hows it going
 - come stai?
 - How you doing?
+- howdy
+- you fine
 
 ## intent:ask_weather
 - How is the weather today?
@@ -4307,12 +4385,16 @@ update
 
 ## intent:stream
 - [Information Technology](stream)
-- [Computer Science](stream)
+- [Computer Engineering](stream)
+- [Artificial Intelligence & Machine Learning](stream)
+- [Data Engineering](stream)
 - [EXTC](stream)
 - [ETRX](stream)
 - [Civil](stream)
 - [information technology](stream)
-- [computer science](stream)
+- [computer engineering](stream)
+- [artificial intelligence & machine learning](stream)
+- [data engineering](stream)
 - [extc](stream)
 - [etrx](stream)
 - [civil](stream)
@@ -4322,22 +4404,32 @@ update
 - college id form
 - lost id form
 - id card form
+- how to apply for id
+- application of id card
+- where to get id
 
 ## intent:change_name
 - name change
 - name is wrong
 - change my name
 - change in name
+- please change my name
+- change name
+- name issue
 
 ## intent:change_stream
 - stream change
 - stream is wrong
 - change my stream
 - change in stream
+- stream issue
+- please change my stream
 
 ## intent:change_sem
 - semester change
 - semester is wrong
 - change my semester
 - change in semester
-
+- semester not right
+- please change my semester
+- semester issue
