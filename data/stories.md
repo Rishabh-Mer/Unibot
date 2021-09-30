@@ -18,13 +18,6 @@
     - utter_greet_e
     - utter_suggestions
 
-## id_card_application + no_changes
-* apply_id
-    - id_card_form
-    - form{"name": "id_card_form"}
-    - utter_show_details
-    - form{"name": null}
-    - utter_id_application_accept
 
 ## ok + yes
 * ok
@@ -60,19 +53,6 @@
 * greet
     - utter_greet_e
     - utter_suggestions
-
-## back  
-* back
-    - utter_back
-
-## back 2
-* back2
-    - utter_back_2
-
-## back 3
-* back3
-    - utter_back_3
-
 
 ## information technology
 * IT
@@ -179,8 +159,7 @@
     - utter_dte_code
 * intake
     - utter_intake
-* merit
-    - utter_merit 
+
     
 ## ask_dte1
 * dte_code
@@ -204,18 +183,11 @@
     - utter_brochure
     - utter_suggestions
 
-## merit
-* merit
-    - utter_merit
 
 ## ask_cutoff
 * cutoff
     - utter_cutoff
 
-## last_date_admission
-* last_date_admission
-    - utter_last_date_admission
-    - utter_admission_schedule
 
 ## intake
 * intake
@@ -480,16 +452,11 @@
     
 ## ask_food
 * food
-    - utter_food
     - utter_facility
 
 ## ask_non_veg
 * non_veg
     - utter_non_veg
-
-## ask_examination
-* examination
-    - utter_examination
 
 ## about_placement
 * placement
@@ -621,14 +588,8 @@
     - form{"name": null}
     - utter_greet_e
     - utter_suggestions
-* quote_day
-    - utter_quote_day
-    - utter_suggestions
 * about_college
     - utter_about_college
-    - utter_suggestions
-* notices
-    - utter_notices
     - utter_suggestions
 
 ## admission + sugg + feed
@@ -638,7 +599,5 @@
     - utter_admission_criteria
 * admission_documents
     - utter_admission_documents
-* last_date_admission
-    - utter_last_date_admission
     - utter_suggestions
 

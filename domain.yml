@@ -24,18 +24,14 @@ actions:
 - utter_ask_weather
 - utter_ask_wherefrom
 - utter_ask_whatismyname
-- utter_examination
-- utter_merit
 - utter_intake
 - utter_scholarship
 - utter_payment
-- utter_food
 - utter_payment_date
 - utter_bus_fees
 # - utter_slots_values
 - utter_no_problem_e
 - utter_college_reopen
-- utter_last_date_admission
 - utter_college_timing
 - utter_minority
 - utter_reservation
@@ -58,13 +54,10 @@ actions:
 - utter_placement 
 - utter_faculty_name
 - utter_principal
-- utter_back
-- utter_back_2
 - utter_wrong_name
 - utter_brochure
 - utter_admission_schedule
 - utter_admission_documents
-- utter_back_3
 - utter_thanks
 - utter_facility
 - utter_transport_way
@@ -80,7 +73,6 @@ actions:
 - utter_ict_classroom
 - utter_tantrostav
 - utter_canteen
-- utter_canteen_menu
 - utter_library_timing
 - utter_bcr_gcr
 - utter_ac_classroom
@@ -704,15 +696,15 @@ responses:
         payload: '/it_newsletter'
 
   utter_comps_syllabus:
-    - text: "Download Syllabus for Computer Engineering Course from SE to BE 
-             by <a href="https://universalcollegeofengineering.edu.in/courses-admissions/computer/syllabus/" target="_blank">Clicking here</a>"
+    - text: 'Download Syllabus for Computer Engineering Course from SE to BE 
+             by <a href="https://universalcollegeofengineering.edu.in/courses-admissions/computer/syllabus/" target="_blank">Clicking here</a>'
       buttons:
       - title: "List of COMPUTER Engineering faculties"
         payload: '/comps_faculties'
 
   utter_civil_syllabus:
-    - text: "Download Syllabus for Civil Engineering Course from SE to BE 
-             by <a href="https://universalcollegeofengineering.edu.in/courses-admissions/civil/syllabus/" target="_blank">Clicking here</a>"
+    - text: 'Download Syllabus for Civil Engineering Course from SE to BE 
+             by <a href="https://universalcollegeofengineering.edu.in/courses-admissions/civil/syllabus/" target="_blank">Clicking here</a>'
       buttons:
       - title: "List of CIVIL Engineering faculties"
         payload: '/civil_faculties'
@@ -895,8 +887,6 @@ responses:
   utter_college_reopen:
     - text: "College will reopen when Government of Maharashtra and University of Mumbai Declares any official notice."
     
-  # utter_last_date_admission:
-  #   - text: "The last date of admission is 24th July 2021."
     
   utter_college_timing:
     - text: "College timings are from 9am to 5pm, College remains closed during public holidays, Sundays, 2nd and 4th Saturday."
